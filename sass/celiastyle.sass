@@ -94,6 +94,7 @@ nav
       @media (max-width: 600px)
         margin: 10px
       img
+        width: 50px
         @media (max-width: 600px)
           width: 40px
 
@@ -119,23 +120,35 @@ section
   +transform( translate(0, 0) )
 
 #stockists
-  z-index: 11
-  background: $background-color //#acafb0
+  z-index: 20
+  background: $background-color
   .map
     position: absolute
     top: 10px
     bottom: 0
     left: 10px
     right: 10px
+    z-index: 21
+  .menuBackground
+    position: absolute
+    z-index: 22
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 15px + 72px + 15px
+    background: $background-color
+
 
 #info
-  z-index: 12
-  background: WhiteSmoke
+  z-index: 30
+  background: $background-color
   background: rgba(255,255,255,0.95)
   text-align: center
   .simpleLogo
-    width: 30%
+    width: 160px
     margin: 20px 0 10px 0
+    @media (max-width: 600px)
+      width: 100px
   p
     line-height: 1.5em
     margin: 10px 10px 1.5em 10px

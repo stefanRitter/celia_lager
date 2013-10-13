@@ -222,6 +222,10 @@ nav .social a {
     margin: 10px;
   }
 }
+/* line 96, ../sass/celiastyle.sass */
+nav .social a img {
+  width: 50px;
+}
 @media (max-width: 600px) {
   /* line 96, ../sass/celiastyle.sass */
   nav .social a img {
@@ -229,7 +233,7 @@ nav .social a {
   }
 }
 
-/* line 102, ../sass/celiastyle.sass */
+/* line 103, ../sass/celiastyle.sass */
 section {
   width: 100%;
   height: 100%;
@@ -246,7 +250,7 @@ section {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 110, ../sass/celiastyle.sass */
+/* line 111, ../sass/celiastyle.sass */
 section.extend {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -254,13 +258,13 @@ section.extend {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 112, ../sass/celiastyle.sass */
+/* line 113, ../sass/celiastyle.sass */
 section h1 {
   text-align: center;
   font-size: 4em;
 }
 
-/* line 116, ../sass/celiastyle.sass */
+/* line 117, ../sass/celiastyle.sass */
 #home {
   z-index: 10;
   background: transparent;
@@ -271,33 +275,50 @@ section h1 {
   transform: translate(0, 0);
 }
 
-/* line 121, ../sass/celiastyle.sass */
+/* line 122, ../sass/celiastyle.sass */
 #stockists {
-  z-index: 11;
+  z-index: 20;
   background: #eeeaeb;
 }
-/* line 124, ../sass/celiastyle.sass */
+/* line 125, ../sass/celiastyle.sass */
 #stockists .map {
   position: absolute;
   top: 10px;
   bottom: 0;
   left: 10px;
   right: 10px;
+  z-index: 21;
+}
+/* line 132, ../sass/celiastyle.sass */
+#stockists .menuBackground {
+  position: absolute;
+  z-index: 22;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 102px;
+  background: #eeeaeb;
 }
 
-/* line 131, ../sass/celiastyle.sass */
+/* line 142, ../sass/celiastyle.sass */
 #info {
-  z-index: 12;
-  background: whitesmoke;
+  z-index: 30;
+  background: #eeeaeb;
   background: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
-/* line 136, ../sass/celiastyle.sass */
+/* line 147, ../sass/celiastyle.sass */
 #info .simpleLogo {
-  width: 30%;
+  width: 160px;
   margin: 20px 0 10px 0;
 }
-/* line 139, ../sass/celiastyle.sass */
+@media (max-width: 600px) {
+  /* line 147, ../sass/celiastyle.sass */
+  #info .simpleLogo {
+    width: 100px;
+  }
+}
+/* line 152, ../sass/celiastyle.sass */
 #info p {
   line-height: 1.5em;
   margin: 10px 10px 1.5em 10px;
