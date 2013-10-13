@@ -9,18 +9,6 @@ $text: #6d6e71
 $background-color: #EEEAEB
 
 
-// **************************************************************************************** SPRITES
-$sprites-sprite-dimensions: true
-$sprites-spacing: 3px
-$sprites-layout: smart
-@import "sprites/sprites/*.png"
-@include all-sprites-sprites
-
-[class^="sprites-"],[class*=" sprites-"]
-  display: inline-block
-  vertical-align: text-top
-
-
 // **************************************************************************************** GENERAL
 html, body
   font-family: "Open Sans", Helvetica, sans-serif
@@ -35,6 +23,11 @@ html
 body
   background: url(../images/celia-logo-color-big.png) no-repeat fixed 
   background-position: 50% 30%
+
+  @media (max-width: 490px)
+    +background-size( 390px auto)
+  @media (max-width: 400px)
+    +background-size( 310px auto)
 
 .noHeight
   height: 0
@@ -54,10 +47,11 @@ nav
   text-transform: uppercase
   .stockists, .info
     display: inline-block
-    position: relative
-    top: 17px
     margin: 0 1.5em
     width: 85px
+    &.desktopNav
+      @media (max-width: 600px)
+        display: none
   .stockists
     text-align: right
   .info
@@ -69,11 +63,27 @@ nav
     &:hover
       color: Black
 
-a.social
-  height: 0
-  padding-top: 57px
-  overflow: hidden
-  margin: 0 0.6em
+  .phoneNav
+    display: none
+    @media (max-width: 600px)
+      display: block
+
+  .social
+    display: inline-block
+    position: relative
+    top: 19px
+    @media (max-width: 600px)
+      margin: 4px 0
+    a
+      line-height: 0
+      font-size: 0
+      color: transparent
+      margin: 0 4px
+      @media (max-width: 600px)
+        margin: 0 10px
+      img
+        @media (max-width: 600px)
+          width: 40px
 
 
 // **************************************************************************************** SECTIONS

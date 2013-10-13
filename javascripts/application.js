@@ -2,7 +2,7 @@
   jQuery(function($) {
 
     function toggleHome($e, txt) {
-      if ($e.text() == 'Home') {
+      if ($e.text() === 'HomeHome') {
         $e.text(txt);
       } else {
         $e.text('Home');
