@@ -1,0 +1,33 @@
+
+@import "compass/reset"
+@import "compass"
+
+
+// **************************************************************************************** SPRITES
+$sprites-sprite-dimensions: true
+$sprites-spacing: 3px
+$sprites-layout: smart
+@import "sprites/sprites/*.png"
+@include all-sprites-sprites
+
+[class^="sprites-"],[class*=" sprites-"]
+  display: inline-block
+  vertical-align: text-top
+
+
+// **************************************************************************************** GENERAL
+html, body
+  font-family: "Open Sans", Helvetica, sans-serif
+
+h1
+  color: green
+  font-size: 4em
+  text-align: center
+
+.social
+  text-align: center
+  a
+    height: 0
+    padding-top: 57px
+    overflow: hidden
+    margin: 0 1em
