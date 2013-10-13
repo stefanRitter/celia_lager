@@ -9,6 +9,17 @@ $text: #6d6e71
 $background-color: #EEEAEB
 
 
+%celiaLogo
+  background: url(../images/celia-logo-color-big.png) no-repeat fixed 
+  background-position: 50% 30%
+
+  @media (max-width: 490px)
+    +background-size( 390px auto)
+  @media (max-width: 400px)
+    +background-size( 320px auto)
+  @media (max-width: 330px)
+    +background-size( 270px auto)
+
 // **************************************************************************************** GENERAL
 html, body
   font-family: "Open Sans", Helvetica, sans-serif
@@ -21,35 +32,35 @@ html
   background: $background-color
 
 body
-  background: url(../images/celia-logo-color-big.png) no-repeat fixed 
-  background-position: 50% 30%
-
-  @media (max-width: 490px)
-    +background-size( 390px auto)
-  @media (max-width: 400px)
-    +background-size( 310px auto)
+  @extend %celiaLogo
 
 .noHeight
   height: 0
   overflow: hidden
 
-.hidden
-  visibility: hidden
-
 
 // **************************************************************************************** NAVIGATION
 nav
   position: fixed
-  bottom: 4%
+  bottom: 30px
   width: 100%
+  height: 72px
   z-index: 2000
   text-align: center
   text-transform: uppercase
+  +transform( translate(0, 130px) )
+  +transition( transform 0.5s )
+  @media (max-width: 600px)
+    bottom: 15px
+  &.moveUp
+    +transform( translate(0, 0) )
   .stockists, .info
     display: inline-block
     margin: 0 1.5em
     width: 85px
     &.desktopNav
+      position: relative
+      top: -23px
       @media (max-width: 600px)
         display: none
   .stockists
@@ -67,20 +78,21 @@ nav
     display: none
     @media (max-width: 600px)
       display: block
+    .stockists, .info
+      width: auto
+      text-align: center
 
   .social
     display: inline-block
-    position: relative
-    top: 19px
     @media (max-width: 600px)
-      margin: 4px 0
+      margin: 15px 0
     a
       line-height: 0
       font-size: 0
       color: transparent
       margin: 0 4px
       @media (max-width: 600px)
-        margin: 0 10px
+        margin: 10px
       img
         @media (max-width: 600px)
           width: 40px
@@ -90,33 +102,42 @@ nav
 section
   width: 100%
   height: 100%
-  background: #acafb0
-  position: relative
+  position: fixed
+  left: 0
   top: 0
-  +transition( top 1s )
+  +transform( translate(0, 100%) )
+  +transition( all 1s )
+  &.extend
+    +transform( translate(0, 0) )
   h1
     text-align: center
     font-size: 4em
 
 #home
+  z-index: 10
   background: transparent
+  +transform( translate(0, 0) )
 
 #stockists
-  &.extend
-    top: -100%
-
+  z-index: 11
+  background: $background-color //#acafb0
   .map
-    margin: 0 auto
-    width: 100%
-    height: 100%
-    background: url(../images/map.jpg) no-repeat center top
+    position: absolute
+    top: 10px
+    bottom: 0
+    left: 10px
+    right: 10px
 
 #info
-  background: url(../images/celia-logo-bw-big.png) no-repeat fixed 
-  background-position: 50% 30%
-  &.extend
-    top: -200%
-
-
+  z-index: 12
+  background: WhiteSmoke
+  background: rgba(255,255,255,0.95)
+  text-align: center
+  .simpleLogo
+    width: 30%
+    margin: 20px 0 10px 0
+  p
+    line-height: 1.5em
+    margin: 10px 10px 1.5em 10px
 
 
