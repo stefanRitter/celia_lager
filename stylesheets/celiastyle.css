@@ -63,13 +63,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 12, ../sass/celiastyle.sass */
+/* line 13, ../sass/celiastyle.sass */
 body {
   background: url(../images/celia-logo-color-big.png) no-repeat fixed;
   background-position: 50% 30%;
 }
 @media (max-width: 490px) {
-  /* line 12, ../sass/celiastyle.sass */
+  /* line 13, ../sass/celiastyle.sass */
   body {
     -webkit-background-size: 390px auto;
     -moz-background-size: 390px auto;
@@ -78,7 +78,7 @@ body {
   }
 }
 @media (max-width: 400px) {
-  /* line 12, ../sass/celiastyle.sass */
+  /* line 13, ../sass/celiastyle.sass */
   body {
     -webkit-background-size: 320px auto;
     -moz-background-size: 320px auto;
@@ -87,7 +87,7 @@ body {
   }
 }
 @media (max-width: 330px) {
-  /* line 12, ../sass/celiastyle.sass */
+  /* line 13, ../sass/celiastyle.sass */
   body {
     -webkit-background-size: 270px auto;
     -moz-background-size: 270px auto;
@@ -96,27 +96,37 @@ body {
   }
 }
 
-/* line 24, ../sass/celiastyle.sass */
+/* line 26, ../sass/celiastyle.sass */
 html, body {
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: Raleway, Helvetica, sans-serif;
   color: #6d6e71;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* line 31, ../sass/celiastyle.sass */
+/* line 33, ../sass/celiastyle.sass */
 html {
   background: #eeeaeb;
 }
 
-/* line 37, ../sass/celiastyle.sass */
+/* line 39, ../sass/celiastyle.sass */
 .noHeight {
   height: 0;
   overflow: hidden;
 }
 
 /* line 43, ../sass/celiastyle.sass */
+strong {
+  font-weight: bold;
+}
+
+/* line 46, ../sass/celiastyle.sass */
+a {
+  color: #71950a;
+}
+
+/* line 50, ../sass/celiastyle.sass */
 nav {
   position: fixed;
   bottom: 30px;
@@ -136,12 +146,12 @@ nav {
   transition: transform 0.5s;
 }
 @media (max-width: 600px) {
-  /* line 43, ../sass/celiastyle.sass */
+  /* line 50, ../sass/celiastyle.sass */
   nav {
     bottom: 15px;
   }
 }
-/* line 55, ../sass/celiastyle.sass */
+/* line 62, ../sass/celiastyle.sass */
 nav.moveUp {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -149,67 +159,67 @@ nav.moveUp {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 57, ../sass/celiastyle.sass */
+/* line 64, ../sass/celiastyle.sass */
 nav .stockists, nav .info {
   display: inline-block;
   margin: 0 1.5em;
   width: 85px;
 }
-/* line 61, ../sass/celiastyle.sass */
+/* line 68, ../sass/celiastyle.sass */
 nav .stockists.desktopNav, nav .info.desktopNav {
   position: relative;
   top: -23px;
 }
 @media (max-width: 600px) {
-  /* line 61, ../sass/celiastyle.sass */
+  /* line 68, ../sass/celiastyle.sass */
   nav .stockists.desktopNav, nav .info.desktopNav {
     display: none;
   }
 }
-/* line 66, ../sass/celiastyle.sass */
+/* line 73, ../sass/celiastyle.sass */
 nav .stockists {
   text-align: right;
 }
-/* line 68, ../sass/celiastyle.sass */
+/* line 75, ../sass/celiastyle.sass */
 nav .info {
   text-align: left;
+  width: 88px;
 }
-/* line 70, ../sass/celiastyle.sass */
+/* line 78, ../sass/celiastyle.sass */
 nav a {
   text-decoration: none;
   color: inherit;
-  margin-top: 23px;
 }
-/* line 74, ../sass/celiastyle.sass */
+/* line 81, ../sass/celiastyle.sass */
 nav a:hover {
   color: black;
 }
-/* line 77, ../sass/celiastyle.sass */
+/* line 84, ../sass/celiastyle.sass */
 nav .phoneNav {
   display: none;
 }
 @media (max-width: 600px) {
-  /* line 77, ../sass/celiastyle.sass */
+  /* line 84, ../sass/celiastyle.sass */
   nav .phoneNav {
     display: block;
   }
 }
-/* line 81, ../sass/celiastyle.sass */
+/* line 88, ../sass/celiastyle.sass */
 nav .phoneNav .stockists, nav .phoneNav .info {
   width: auto;
   text-align: center;
 }
-/* line 85, ../sass/celiastyle.sass */
+/* line 92, ../sass/celiastyle.sass */
 nav .social {
   display: inline-block;
 }
 @media (max-width: 600px) {
-  /* line 85, ../sass/celiastyle.sass */
+  /* line 92, ../sass/celiastyle.sass */
   nav .social {
     margin: 15px 0;
   }
 }
-/* line 89, ../sass/celiastyle.sass */
+/* line 96, ../sass/celiastyle.sass */
 nav .social a {
   line-height: 0;
   font-size: 0;
@@ -217,29 +227,38 @@ nav .social a {
   margin: 0 4px;
 }
 @media (max-width: 600px) {
-  /* line 89, ../sass/celiastyle.sass */
+  /* line 96, ../sass/celiastyle.sass */
   nav .social a {
     margin: 10px;
   }
 }
-/* line 96, ../sass/celiastyle.sass */
+/* line 103, ../sass/celiastyle.sass */
 nav .social a img {
   width: 50px;
 }
 @media (max-width: 600px) {
-  /* line 96, ../sass/celiastyle.sass */
+  /* line 103, ../sass/celiastyle.sass */
   nav .social a img {
     width: 40px;
   }
 }
+/* line 108, ../sass/celiastyle.sass */
+nav .social a.buyOnline img {
+  width: 70px;
+  position: relative;
+  bottom: -10px;
+}
 
-/* line 103, ../sass/celiastyle.sass */
+/* line 115, ../sass/celiastyle.sass */
 section {
   width: 100%;
   height: 100%;
   position: fixed;
+  overflow-y: auto;
+  overflow-x: hidden;
   left: 0;
   top: 0;
+  z-index: 0;
   -webkit-transform: translate(0, 100%);
   -moz-transform: translate(0, 100%);
   -ms-transform: translate(0, 100%);
@@ -250,7 +269,7 @@ section {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 111, ../sass/celiastyle.sass */
+/* line 126, ../sass/celiastyle.sass */
 section.extend {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -258,13 +277,24 @@ section.extend {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 113, ../sass/celiastyle.sass */
+/* line 128, ../sass/celiastyle.sass */
 section h1 {
   text-align: center;
   font-size: 4em;
 }
+/* line 131, ../sass/celiastyle.sass */
+section .container {
+  margin: 0 auto;
+  max-width: 600px;
+}
+/* line 134, ../sass/celiastyle.sass */
+section .navSpacer {
+  clear: both;
+  height: 140px;
+  width: 100%;
+}
 
-/* line 117, ../sass/celiastyle.sass */
+/* line 140, ../sass/celiastyle.sass */
 #home {
   z-index: 10;
   background: transparent;
@@ -275,12 +305,12 @@ section h1 {
   transform: translate(0, 0);
 }
 
-/* line 122, ../sass/celiastyle.sass */
+/* line 145, ../sass/celiastyle.sass */
 #stockists {
   z-index: 20;
   background: #eeeaeb;
 }
-/* line 125, ../sass/celiastyle.sass */
+/* line 148, ../sass/celiastyle.sass */
 #stockists .map {
   position: absolute;
   top: 10px;
@@ -289,7 +319,7 @@ section h1 {
   right: 10px;
   z-index: 21;
 }
-/* line 132, ../sass/celiastyle.sass */
+/* line 155, ../sass/celiastyle.sass */
 #stockists .menuBackground {
   position: absolute;
   z-index: 22;
@@ -300,26 +330,101 @@ section h1 {
   background: #eeeaeb;
 }
 
-/* line 142, ../sass/celiastyle.sass */
-#info {
+/* line 165, ../sass/celiastyle.sass */
+#info, #buyOnline {
   z-index: 30;
+  overflow-y: scroll;
   background: #eeeaeb;
   background: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
-/* line 147, ../sass/celiastyle.sass */
-#info .simpleLogo {
+/* line 171, ../sass/celiastyle.sass */
+#info .simpleLogo, #buyOnline .simpleLogo {
   width: 160px;
   margin: 20px 0 10px 0;
 }
 @media (max-width: 600px) {
-  /* line 147, ../sass/celiastyle.sass */
-  #info .simpleLogo {
+  /* line 171, ../sass/celiastyle.sass */
+  #info .simpleLogo, #buyOnline .simpleLogo {
     width: 100px;
   }
 }
-/* line 152, ../sass/celiastyle.sass */
-#info p {
+/* line 176, ../sass/celiastyle.sass */
+#info p, #buyOnline p {
   line-height: 1.5em;
   margin: 10px 10px 1.5em 10px;
+}
+/* line 179, ../sass/celiastyle.sass */
+#info h2, #buyOnline h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+  margin: 1em 0 -1em 0;
+  clear: both;
+}
+/* line 185, ../sass/celiastyle.sass */
+#info ul li, #buyOnline ul li {
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* line 189, ../sass/celiastyle.sass */
+#info ul li.active, #buyOnline ul li.active {
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+}
+/* line 193, ../sass/celiastyle.sass */
+#info .about, #info .contact, #info .pressPr, #info .ingredients, #info .contact, #buyOnline .about, #buyOnline .contact, #buyOnline .pressPr, #buyOnline .ingredients, #buyOnline .contact {
+  clear: both;
+}
+/* line 195, ../sass/celiastyle.sass */
+#info .subNav, #buyOnline .subNav {
+  clear: both;
+  padding-top: 2em;
+}
+/* line 198, ../sass/celiastyle.sass */
+#info .object, #buyOnline .object {
+  clear: both;
+  padding-top: 4em;
+}
+/* line 201, ../sass/celiastyle.sass */
+#info .object h3, #buyOnline .object h3 {
+  clear: both;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+  color: #71950a;
+}
+/* line 206, ../sass/celiastyle.sass */
+#info .object img, #buyOnline .object img {
+  float: right;
+  width: 20%;
+}
+/* line 209, ../sass/celiastyle.sass */
+#info .object p, #buyOnline .object p {
+  float: left;
+  width: 75%;
+}
+/* line 214, ../sass/celiastyle.sass */
+#info .contact .object img, #info .onlineStockists .object img, #buyOnline .contact .object img, #buyOnline .onlineStockists .object img {
+  float: left;
+}
+/* line 216, ../sass/celiastyle.sass */
+#info .contact .object p, #info .onlineStockists .object p, #buyOnline .contact .object p, #buyOnline .onlineStockists .object p {
+  float: right;
+}
+
+/* line 220, ../sass/celiastyle.sass */
+#buyOnline h1 {
+  font-size: 3em;
+  padding-top: 2em;
+  color: black;
+  text-transform: uppercase;
+}
+/* line 225, ../sass/celiastyle.sass */
+#buyOnline h2 {
+  font-size: 1em;
+  display: inline-block;
+  width: 80%;
+  line-height: 1.5em;
+  text-transform: none;
 }

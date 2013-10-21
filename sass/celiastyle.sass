@@ -7,6 +7,7 @@
 // **************************************************************************************** VARIABLES
 $text: #6d6e71
 $background-color: #EEEAEB
+$celia-green: #71950a
 
 
 %celiaLogo
@@ -20,9 +21,10 @@ $background-color: #EEEAEB
   @media (max-width: 330px)
     +background-size( 270px auto)
 
+
 // **************************************************************************************** GENERAL
 html, body
-  font-family: "Open Sans", Helvetica, sans-serif
+  font-family: Raleway, Helvetica, sans-serif
   color: $text
   width: 100%
   height: 100%
@@ -38,6 +40,11 @@ body
   height: 0
   overflow: hidden
 
+strong
+  font-weight: bold
+
+a
+  color: $celia-green
 
 // **************************************************************************************** NAVIGATION
 nav
@@ -67,10 +74,10 @@ nav
     text-align: right
   .info
     text-align: left
+    width: 88px
   a
     text-decoration: none
     color: inherit
-    margin-top: 23px
     &:hover
       color: Black
 
@@ -97,6 +104,11 @@ nav
         width: 50px
         @media (max-width: 600px)
           width: 40px
+      &.buyOnline
+        img
+          width: 70px
+          position: relative
+          bottom: -10px
 
 
 // **************************************************************************************** SECTIONS
@@ -104,8 +116,11 @@ section
   width: 100%
   height: 100%
   position: fixed
+  overflow-y: auto
+  overflow-x: hidden
   left: 0
   top: 0
+  z-index: 0
   +transform( translate(0, 100%) )
   +transition( all 1s )
   &.extend
@@ -113,6 +128,14 @@ section
   h1
     text-align: center
     font-size: 4em
+  .container
+    margin: 0 auto
+    max-width: 600px
+  .navSpacer
+    clear: both
+    height: 140px
+    width: 100%
+
 
 #home
   z-index: 10
@@ -139,8 +162,9 @@ section
     background: $background-color
 
 
-#info
+#info, #buyOnline
   z-index: 30
+  overflow-y: scroll
   background: $background-color
   background: rgba(255,255,255,0.95)
   text-align: center
@@ -152,5 +176,56 @@ section
   p
     line-height: 1.5em
     margin: 10px 10px 1.5em 10px
+  h2
+    font-size: 2em
+    text-transform: uppercase
+    margin: 1em 0 -1em 0
+    clear: both
+  ul
+    li
+      margin-bottom: 8px
+      text-transform: uppercase
+      cursor: pointer
+      &.active
+        font-weight: bold
+        font-style: italic
+        color: Black
+  .about, .contact, .pressPr, .ingredients, .contact
+    clear: both
+  .subNav
+    clear: both
+    padding-top: 2em
+  .object
+    clear: both
+    padding-top: 4em
+    h3
+      clear: both
+      font-size: 1.5em
+      padding-bottom: 20px
+      color: $celia-green
+    img
+      float: right
+      width: 20%
+    p
+      float: left
+      width: 75%
+  .contact, .onlineStockists
+    .object
+      img
+        float: left
+      p
+        float:  right
 
+#buyOnline
+  h1
+    font-size: 3em
+    padding-top: 2em
+    color: Black
+    text-transform: uppercase
+  h2
+    font-size: 1em
+    display: inline-block
+    width: 80%
+    line-height: 1.5em
+    text-transform: none
 

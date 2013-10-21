@@ -1,6 +1,6 @@
 (function() {
   jQuery(function($) {
-
+    'use strict';
 
     // SLIDE DOWN navigation when down loading
     setTimeout(function() {
@@ -12,7 +12,7 @@
     $('a.stockists').bind('click touch', function(e) {
       e.preventDefault(); e.stopPropagation();
       $('#stockists').toggleClass('extend');
-      $('#info').removeClass('extend');
+      $('#info, #buyOnline').removeClass('extend');
       setTimeout(function() {
         toggleHome($('a.stockists'), 'Stockists');
         $('a.info').text('More Info');
@@ -22,11 +22,17 @@
     $('a.info').bind('click touch', function(e) {
       e.preventDefault(); e.stopPropagation();
       $('#info').toggleClass('extend');
-      $('#stockists').removeClass('extend');
+      $('#stockists, #buyOnline').removeClass('extend');
       setTimeout(function() {
         toggleHome($('a.info'), 'More Info');
         $('a.stockists').text('Stockists');
       }, 500);
+    });
+
+    $('a.buyOnline').bind('click touch', function(e) {
+      e.preventDefault(); e.stopPropagation();
+      $('#buyOnline').toggleClass('extend');
+      $('#stockists, #info').removeClass('extend');
     });
 
     function toggleHome($e, txt) {
@@ -36,6 +42,21 @@
       } else {
         $e.text('Home');
       }
+    }
+
+
+    // MORE INFO NAV LINKS
+    $('#info ul li').on("click touch", function(e) {
+      console.log('click');
+      $('#info ul li').removeClass('active');
+      var target = $(e.target).addClass('active').attr('id');
+      $('#info .about, #info .contact, #info .pressPr, #info .ingredients').fadeOut();
+      $('#info .'+target).fadeIn();
+    });
+    $('#info .contact, #info .pressPr, #info .ingredients').fadeOut();
+
+    function scrollTo($parentDiv, target) {
+      $parentDiv.scrollTo(target,800);
     }
 
   });
