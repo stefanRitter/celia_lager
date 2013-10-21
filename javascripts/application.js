@@ -47,9 +47,10 @@
 
     // MORE INFO NAV LINKS
     $('#info ul li').on("click touch", function(e) {
-      console.log('click');
       $('#info ul li').removeClass('active');
-      var target = $(e.target).addClass('active').attr('id');
+      var target = $(e.target).attr('id');
+      $('.subNav').find('#'+target).addClass('active');
+      $('.topNav').find('#'+target).addClass('active');
       $('#info .about, #info .contact, #info .pressPr, #info .ingredients').fadeOut();
       $('#info .'+target).fadeIn();
     });

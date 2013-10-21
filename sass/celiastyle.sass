@@ -46,6 +46,16 @@ strong
 a
   color: $celia-green
 
+.specialOffer
+  position: fixed
+  position: fixed
+  top: 60%
+  right: 10%
+  +transform( rotate(15deg) )
+  +transition( transform 0.5s )
+  &:hover
+    +transform( rotate(0) )
+
 // **************************************************************************************** NAVIGATION
 nav
   position: fixed
@@ -219,7 +229,7 @@ section
 #buyOnline
   h1
     font-size: 3em
-    padding-top: 2em
+    padding-top: 1em
     color: Black
     text-transform: uppercase
   h2
