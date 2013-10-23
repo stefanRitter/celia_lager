@@ -56,6 +56,7 @@ a
   &:hover
     +transform( rotate(0) )
 
+
 // **************************************************************************************** NAVIGATION
 nav
   position: fixed
@@ -68,23 +69,24 @@ nav
   +transform( translate(0, 130px) )
   +transition( transform 0.5s )
   @media (max-width: 600px)
-    bottom: 15px
+    bottom: 55px
   &.moveUp
     +transform( translate(0, 0) )
   .stockists, .info
     display: inline-block
     margin: 0 1.5em
-    width: 85px
+    width: 88px
+    padding: 3px 0
+    text-align: center
+    background-color: $background-color
+    @media (max-width: 600px)
+      position: relative
+      top: 17px
     &.desktopNav
       position: relative
       top: -23px
       @media (max-width: 600px)
         display: none
-  .stockists
-    text-align: right
-  .info
-    text-align: left
-    width: 88px
   a
     text-decoration: none
     color: inherit
@@ -205,6 +207,8 @@ section
   .subNav
     clear: both
     padding-top: 2em
+  .topNav
+    margin-top: 1em
   .object
     clear: both
     padding-top: 4em
@@ -214,11 +218,34 @@ section
       padding-bottom: 20px
       color: $celia-green
     img
-      float: right
-      width: 20%
-    p
       float: left
-      width: 75%
+      width: 20%
+      @media (max-width: 340px)
+        position: relative
+        top: 1em
+
+    p
+      float: right
+      text-align: left
+      width: 70%
+  .object.ingredient
+    .left
+      float: left
+      font-weight: bold
+      width: 25%
+      text-align: right
+    .right
+      text-align: left
+      float: right
+      width: 62%
+    .clear
+      clear: both
+  .pressPr
+    .object
+      img
+        width: 80%
+        float: none
+        margin: 2em 0
   .contact, .onlineStockists
     .object
       img

@@ -33,6 +33,8 @@
       e.preventDefault(); e.stopPropagation();
       $('#buyOnline').toggleClass('extend');
       $('#stockists, #info').removeClass('extend');
+      $('a.info').text('More Info');
+      $('a.stockists').text('Stockists');
     });
 
     function toggleHome($e, txt) {
