@@ -5,6 +5,7 @@
     // SLIDE DOWN navigation when down loading
     setTimeout(function() {
       $('nav').addClass('moveUp');
+      $('#newsletter').addClass('extend');
     }, 600);
 
 
@@ -46,7 +47,6 @@
       }
     }
 
-
     // MORE INFO NAV LINKS
     $('#info ul li').on("click touch", function(e) {
       $('#info ul li').removeClass('active');
@@ -62,5 +62,18 @@
       $parentDiv.scrollTo(target,800);
     }
 
+    // ABOUT SECTIONS
+    $('#aboutContainer').on('click touch', 'h3', function (e) {
+      if ($(e.target).next().css('display') !== 'block') {
+        $('#aboutContainer').find('p, img').slideUp();
+        $(e.target).next().slideDown().next().slideDown();
+      }
+    });
+
+    // MAILCHIMP POPUP
+    $('#noThanks').bind('click touch', function(e) {
+      e.preventDefault(); e.stopPropagation();
+      $('#newsletter').removeClass('extend');
+    });
   });
 }).call(this);

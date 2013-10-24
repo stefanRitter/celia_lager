@@ -51,12 +51,41 @@ a
   position: fixed
   top: 60%
   right: 10%
+  img
+    width: 100%
   +transform( rotate(15deg) )
   +transition( transform 0.5s )
   &:hover
     +transform( rotate(0) )
+  @media (max-width: 1048px)
+    right: 5px
+  @media (max-width: 843px)
+    right: 2px
+    img
+      width: 80%
+      float: right
+  @media (max-width: 520px)
+    +transform( rotate(0) )
+    img
+      width: 50%
 
-
+.freeformAward
+  position: fixed
+  position: fixed
+  top: 60%
+  left: 10%
+  img
+    width: 100%
+  @media (max-width: 1048px)
+    left: 5px
+  @media (max-width: 843px)
+    left: 2px
+    img
+      width: 80%
+      float: left
+  @media (max-width: 520px)
+    img
+      width: 50%
 // **************************************************************************************** NAVIGATION
 nav
   position: fixed
@@ -116,11 +145,6 @@ nav
         width: 50px
         @media (max-width: 600px)
           width: 40px
-      &.buyOnline
-        img
-          width: 70px
-          position: relative
-          bottom: -10px
 
 
 // **************************************************************************************** SECTIONS
@@ -228,6 +252,20 @@ section
       float: right
       text-align: left
       width: 70%
+  
+  #aboutContainer
+    .object
+      padding-top: 1em
+      h3
+        padding: 4px
+        background-color: $background-color
+        cursor: pointer
+      p
+        padding-top: 10px
+        display: none
+      img
+        padding-top: 10px
+        display: none
   .object.ingredient
     .left
       float: left
@@ -243,7 +281,7 @@ section
   .pressPr
     .object
       img
-        width: 80%
+        width: 50%
         float: none
         margin: 2em 0
   .contact, .onlineStockists
@@ -265,4 +303,39 @@ section
     width: 80%
     line-height: 1.5em
     text-transform: none
+
+
+// **************************************************************************************** MAILCHIMP
+#newsletter
+  z-index: 10000
+  background-color: rgba(0,0,0,0.5)
+  #mc_embed_signup
+    text-align: center
+    background-color: Black
+    font-family: Raleway, Helvetica, sans-serif
+    color: white
+    width: 300px
+    padding: 10px
+    position: absolute
+    top: 25%
+    left: 50%
+    margin-left: -160px
+    +border-radius( 6px )
+    form
+      text-align: center
+    img
+      display: inline-block
+      width: 30%
+    h2
+      font-weight: normal
+      font-size: 18px
+      line-height: 1.4em
+      margin: 1em 0
+    .mc-field-group
+      padding-bottom: 0
+
+    .button
+      width: 127px
+
+
 
