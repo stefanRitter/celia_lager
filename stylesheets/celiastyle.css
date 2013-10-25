@@ -575,12 +575,12 @@ section .navSpacer {
 }
 
 /* line 309, ../sass/celiastyle.sass */
-#newsletter {
+#newsletter, #specialOfferPopup {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
 }
 /* line 312, ../sass/celiastyle.sass */
-#newsletter #mc_embed_signup {
+#newsletter #mc_embed_signup, #specialOfferPopup #mc_embed_signup {
   text-align: center;
   background-color: black;
   font-family: Raleway, Helvetica, sans-serif;
@@ -598,26 +598,26 @@ section .navSpacer {
   border-radius: 6px;
 }
 /* line 324, ../sass/celiastyle.sass */
-#newsletter #mc_embed_signup form {
+#newsletter #mc_embed_signup form, #specialOfferPopup #mc_embed_signup form {
   text-align: center;
 }
 /* line 326, ../sass/celiastyle.sass */
-#newsletter #mc_embed_signup img {
+#newsletter #mc_embed_signup img, #specialOfferPopup #mc_embed_signup img {
   display: inline-block;
   width: 30%;
 }
 /* line 329, ../sass/celiastyle.sass */
-#newsletter #mc_embed_signup h2 {
+#newsletter #mc_embed_signup h2, #specialOfferPopup #mc_embed_signup h2 {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4em;
   margin: 1em 0;
 }
 /* line 334, ../sass/celiastyle.sass */
-#newsletter #mc_embed_signup .mc-field-group {
+#newsletter #mc_embed_signup .mc-field-group, #specialOfferPopup #mc_embed_signup .mc-field-group {
   padding-bottom: 0;
 }
 /* line 337, ../sass/celiastyle.sass */
-#newsletter #mc_embed_signup .button {
+#newsletter #mc_embed_signup .button, #specialOfferPopup #mc_embed_signup .button {
   width: 127px;
 }

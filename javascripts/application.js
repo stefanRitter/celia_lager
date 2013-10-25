@@ -75,5 +75,14 @@
       e.preventDefault(); e.stopPropagation();
       $('#newsletter').removeClass('extend');
     });
+
+    // SECIAL OFFER
+    $('.specialOffer').on('click touch', function(e) {
+      e.preventDefault(); e.stopPropagation();
+      $('#specialOfferPopup').addClass('extend');
+    });
+    $('#specialOfferPopup').on('click touch', function(e) {
+      $('#specialOfferPopup').removeClass('extend');
+    });
   });
 }).call(this);
