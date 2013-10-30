@@ -2,6 +2,8 @@
   jQuery(function($) {
     'use strict';
 
+    checkCookie();
+
     // SLIDE DOWN navigation when down loading
     setTimeout(function() {
       $('nav').addClass('moveUp');
@@ -86,3 +88,61 @@
     });
   });
 }).call(this);
+
+
+
+//cookie code is based on the w3school's cookie tutorial, comments are mine
+//setCookie is used to install a new cookie
+function setCookie(c_name, value, exdays) {
+
+  var exdate = new Date();
+  //get system date&time
+  exdate.setDate(exdate.getDate() + exdays);
+  //calculates the expiration date, adding exdays to the current date
+
+  var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+  //escape() makes the string stored in value ASCII confirm, ie no special characters
+  //example: c_value = "value string; expires=Wed, 21 Nov 2012 16:38:52 GMT"
+
+  document.cookie = c_name + "=" + c_value;
+  //writes out cookie:
+  //MyCookieName=MyCookieValue; expires=Wed, 21 Nov 2012 16:38:52 GMT
+}
+
+//returns the value of a cookie
+function getCookie(c_name) {
+
+  var i, x, y;
+  //counters and iteratorxs
+
+  var ARRcookies = document.cookie.split(";");
+  //this creates an array of strings for all the arguments in the cookie
+
+  for ( i = 0; i < ARRcookies.length; i++) {//loop through the elements of the array
+
+    x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+    //this extracts the name of cookie
+
+    y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+    //this extracts the rest of the arguement after the equalsign
+
+    x = x.replace(/^\s+|\s+$/g, "");
+    //this deletes all white and empty spaces in the string, using RegExp
+
+    if (x == c_name) {
+      return unescape(y);
+      //if this is what we are looking for then return the value
+    }
+  }
+}
+
+function checkCookie() {
+  var username = getCookie("hasbeenhere");
+
+  if (username != null && username != "") {
+    $('#newsletter').remove();
+  } else {
+    setCookie("hasbeenhere", "yes", 4);
+  }
+}
+//end of cookie code
