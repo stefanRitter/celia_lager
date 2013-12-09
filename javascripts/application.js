@@ -81,6 +81,14 @@
       e.preventDefault();
       e.stopPropagation();
       $('#newsletter').removeClass('extend');
+      setCookie('hasbeenhere', 'yes', 4);
+    });
+
+    $('#alreadySubscribed').bind('click touch', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $('#newsletter').removeClass('extend');
+      setCookie('hasbeenhere', 'yes', 360);
     });
 
   });
@@ -89,14 +97,16 @@
 
 
 //cookie code is based on the w3school
-function setCookie(c_name, value, exdays) {
+function setCookie(cName, value, exdays) {
+  'use strict';
   var exdate = new Date();
   exdate.setDate(exdate.getDate() + exdays);
-  var c_value = escape(value) + ((exdays == null) ? '' : '; expires=' + exdate.toUTCString());
-  document.cookie = c_name + '=' + c_value;
+  var cValue = escape(value) + ((exdays == null) ? '' : '; expires=' + exdate.toUTCString());
+  document.cookie = cName + '=' + cValue;
 }
 
 function getCookie(c_name) {
+  'use strict';
   var i, x, y;
   var ARRcookies = document.cookie.split(";");
 
@@ -111,11 +121,10 @@ function getCookie(c_name) {
 }
 
 function checkCookie() {
-  var username = getCookie('hasbeenhere');
-  if (username != null && username != '') {
+  'use strict';
+  var hasbeenhere = getCookie('hasbeenhere');
+  if (hasbeenhere === 'yes') {
     $('#newsletter').remove();
-  } else {
-    setCookie('hasbeenhere', 'yes', 4);
   }
 }
 //end of cookie code
