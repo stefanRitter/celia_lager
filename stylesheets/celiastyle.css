@@ -574,15 +574,21 @@ section .navSpacer {
 #info .contact .object p, #info .onlineStockists .object p, #buyOnline .contact .object p, #buyOnline .onlineStockists .object p {
   float: right;
 }
+/* line 311, ../sass/celiastyle.sass */
+#info .triggerNewsletter, #buyOnline .triggerNewsletter {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
 
-/* line 313, ../sass/celiastyle.sass */
+/* line 317, ../sass/celiastyle.sass */
 #buyOnline h1 {
   font-size: 3em;
   padding-top: 1em;
   color: black;
   text-transform: uppercase;
 }
-/* line 318, ../sass/celiastyle.sass */
+/* line 322, ../sass/celiastyle.sass */
 #buyOnline h2 {
   font-size: 1em;
   display: inline-block;
@@ -591,12 +597,12 @@ section .navSpacer {
   text-transform: none;
 }
 
-/* line 327, ../sass/celiastyle.sass */
+/* line 331, ../sass/celiastyle.sass */
 #newsletter, #specialOfferPopup {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 330, ../sass/celiastyle.sass */
+/* line 334, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup, #specialOfferPopup #mc_embed_signup {
   text-align: center;
   background-color: black;
@@ -614,31 +620,31 @@ section .navSpacer {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 342, ../sass/celiastyle.sass */
+/* line 346, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup form, #specialOfferPopup #mc_embed_signup form {
   text-align: center;
 }
-/* line 344, ../sass/celiastyle.sass */
+/* line 348, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup img, #specialOfferPopup #mc_embed_signup img {
   display: inline-block;
   width: 30%;
 }
-/* line 347, ../sass/celiastyle.sass */
+/* line 351, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup h2, #specialOfferPopup #mc_embed_signup h2 {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4em;
   margin: 1em 0;
 }
-/* line 352, ../sass/celiastyle.sass */
+/* line 356, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .mc-field-group, #specialOfferPopup #mc_embed_signup .mc-field-group {
   padding-bottom: 0;
 }
-/* line 355, ../sass/celiastyle.sass */
+/* line 359, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .button, #specialOfferPopup #mc_embed_signup .button {
   width: 210px;
 }
-/* line 358, ../sass/celiastyle.sass */
+/* line 362, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup #noThanks, #specialOfferPopup #mc_embed_signup #noThanks {
   position: relative;
   left: 2px;

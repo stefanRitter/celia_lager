@@ -89,6 +89,10 @@
       setCookie('hasbeenhere', 'yes', 360);
     });
 
+    $('.triggerNewsletter').on('click touch', function() {
+      $('#newsletter').addClass('extend');
+    });
+
   });
 }).call(this);
 
