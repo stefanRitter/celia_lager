@@ -91,43 +91,21 @@ a
 // **************************************************************************************** NAVIGATION
 nav
   position: fixed
-  bottom: 0
+  bottom: 5px
   width: 100%
   z-index: 2000
   text-align: center
   text-transform: uppercase
-  +transform( translate(0, 130px) )
-  +transition( transform 0.5s )
+  &.down
+    +transform( translate(0, 130px) )
+    +transition( transform 0.5s )
   &.moveUp
     +transform( translate(0, 0) )
-  .stockists, .info
-    display: inline-block
-    margin: 0 1.5em
-    width: 88px
-    padding: 3px 0
-    text-align: center
-    background-color: $background-color
-    @media (max-width: 600px)
-      position: relative
-      top: 10px
-    &.desktopNav
-      position: relative
-      top: -23px
-      @media (max-width: 600px)
-        display: none
   a
     text-decoration: none
     color: inherit
     &:hover
       color: Black
-
-  .phoneNav
-    display: none
-    @media (max-width: 600px)
-      display: block
-    .stockists, .info
-      width: auto
-      text-align: center
 
   .social
     display: inline-block
@@ -144,6 +122,21 @@ nav
         width: 50px
         @media (max-width: 600px)
           width: 40px
+
+  &.topNav
+    top: 2px
+    bottom: auto
+    a
+      display: inline-block
+      width: 96px
+      padding: 3px
+      text-align: center
+      background-color: $background-color
+      margin-top: 3px
+      &.comingSoon
+        width: 126px
+
+
 
 
 // **************************************************************************************** SECTIONS
@@ -182,7 +175,7 @@ section
   .mainLogo
     cursor: pointer
     position: absolute
-    top: 40%
+    top: 45%
     left: 50%
     margin-left: -225px
     margin-top: -225px
@@ -195,13 +188,17 @@ section
       width: 250px
       margin-left: -125px
       margin-top: -125px
+    @media (max-height: 400px)
+      width: 200px
+      margin-top: -100px
+      margin-left: -100px
 
 #stockists
   z-index: 20
   background: $background-color
   .map
     position: absolute
-    top: 10px
+    top: 55px
     bottom: 0
     left: 10px
     right: 10px
@@ -250,7 +247,7 @@ section
     clear: both
     padding-top: 2em
   .topNav
-    margin-top: 1em
+    margin-top: 65px
   .object
     clear: both
     padding-top: 4em
@@ -316,7 +313,7 @@ section
 #buyOnline
   h1
     font-size: 3em
-    padding-top: 1em
+    padding-top: 1.3em
     color: Black
     text-transform: uppercase
   h2

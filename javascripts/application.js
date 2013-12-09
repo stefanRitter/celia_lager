@@ -3,12 +3,10 @@
 
   jQuery(function($) {
 
-    checkCookie();
-
     // SLIDE DOWN navigation when down loading
     setTimeout(function() {
-      $('nav').addClass('moveUp');
-      $('#newsletter').addClass('extend');
+      $('nav.hidden').addClass('moveUp');
+      checkCookie();
     }, 600);
 
 
@@ -16,42 +14,56 @@
     $('a.stockists').bind('click touch', function(e) {
       e.preventDefault();
       e.stopPropagation();
+      $('a.info').text('More Info');
+      $('a.buyOnline').text('Buy Online');
+      
       $('#stockists').toggleClass('extend');
       $('#info, #buyOnline').removeClass('extend');
-      setTimeout(function() {
-        toggleHome($('a.stockists'), 'Stockists');
-        $('a.info').text('More Info');
-      }, 500);
+      
+      if($('a.stockists').text() !== 'Home') {
+        $('a.stockists').text('Home');
+      } else {
+        $('a.stockists').text('Stockists');
+      }
     });
 
     $('a.info, .mainLogo').bind('click touch', function(e) {
       e.preventDefault();
       e.stopPropagation();
+      $('a.stockists').text('Stockists');
+      $('a.buyOnline').text('Buy Online');
+      
       $('#info').toggleClass('extend');
       $('#stockists, #buyOnline').removeClass('extend');
-      setTimeout(function() {
-        toggleHome($('a.info'), 'More Info');
-        $('a.stockists').text('Stockists');
-      }, 500);
+      
+      if($('a.info').text() !== 'Home') {
+        $('a.info').text('Home');
+      } else {
+        $('a.info').text('More Info');
+      }
     });
 
     $('a.buyOnline').bind('click touch', function(e) {
       e.preventDefault();
       e.stopPropagation();
+      $('a.stockists').text('Stockists');
+      $('a.info').text('More Info');
+      
       $('#buyOnline').toggleClass('extend');
       $('#stockists, #info').removeClass('extend');
-      $('a.info').text('More Info');
-      $('a.stockists').text('Stockists');
+      
+      if($('a.buyOnline').text() !== 'Home') {
+        $('a.buyOnline').text('Home');
+      } else {
+        $('a.buyOnline').text('Stockists');
+      }
     });
 
-    function toggleHome($e, txt) {
-      // there are 2 links (one hidden)
-      if ($e.text() === 'HomeHome') {
-        $e.text(txt);
-      } else {
-        $e.text('Home');
-      }
-    }
+    $('.comingSoon').on('click touch', function(e) {
+      e.preventDefault();
+      $(e.target).text('Coming Soon');
+    });
+
 
     // MORE INFO NAV LINKS
     $('#info ul li').on('click touch', function(e) {
@@ -126,7 +138,9 @@ function checkCookie() {
   'use strict';
   var hasbeenhere = getCookie('hasbeenhere');
   if (hasbeenhere === 'yes') {
-    $('#newsletter').remove();
+    $('#newsletter').removeClass('extend');
+  } else {
+    $('#newsletter').addClass('extend');
   }
 }
 //end of cookie code

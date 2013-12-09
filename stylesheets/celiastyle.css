@@ -221,11 +221,14 @@ a {
 /* line 92, ../sass/celiastyle.sass */
 nav {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   width: 100%;
   z-index: 2000;
   text-align: center;
   text-transform: uppercase;
+}
+/* line 99, ../sass/celiastyle.sass */
+nav.down {
   -webkit-transform: translate(0, 130px);
   -moz-transform: translate(0, 130px);
   -ms-transform: translate(0, 130px);
@@ -236,7 +239,7 @@ nav {
   -o-transition: -o-transform 0.5s;
   transition: transform 0.5s;
 }
-/* line 101, ../sass/celiastyle.sass */
+/* line 102, ../sass/celiastyle.sass */
 nav.moveUp {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -244,68 +247,26 @@ nav.moveUp {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 103, ../sass/celiastyle.sass */
-nav .stockists, nav .info {
-  display: inline-block;
-  margin: 0 1.5em;
-  width: 88px;
-  padding: 3px 0;
-  text-align: center;
-  background-color: #eeeaeb;
-}
-@media (max-width: 600px) {
-  /* line 103, ../sass/celiastyle.sass */
-  nav .stockists, nav .info {
-    position: relative;
-    top: 10px;
-  }
-}
-/* line 113, ../sass/celiastyle.sass */
-nav .stockists.desktopNav, nav .info.desktopNav {
-  position: relative;
-  top: -23px;
-}
-@media (max-width: 600px) {
-  /* line 113, ../sass/celiastyle.sass */
-  nav .stockists.desktopNav, nav .info.desktopNav {
-    display: none;
-  }
-}
-/* line 118, ../sass/celiastyle.sass */
+/* line 104, ../sass/celiastyle.sass */
 nav a {
   text-decoration: none;
   color: inherit;
 }
-/* line 121, ../sass/celiastyle.sass */
+/* line 107, ../sass/celiastyle.sass */
 nav a:hover {
   color: black;
 }
-/* line 124, ../sass/celiastyle.sass */
-nav .phoneNav {
-  display: none;
-}
-@media (max-width: 600px) {
-  /* line 124, ../sass/celiastyle.sass */
-  nav .phoneNav {
-    display: block;
-  }
-}
-/* line 128, ../sass/celiastyle.sass */
-nav .phoneNav .stockists, nav .phoneNav .info {
-  width: auto;
-  text-align: center;
-}
-/* line 132, ../sass/celiastyle.sass */
+/* line 110, ../sass/celiastyle.sass */
 nav .social {
   display: inline-block;
 }
 @media (max-width: 600px) {
-  /* line 132, ../sass/celiastyle.sass */
+  /* line 110, ../sass/celiastyle.sass */
   nav .social {
     margin-top: 15px;
   }
 }
-/* line 136, ../sass/celiastyle.sass */
+/* line 114, ../sass/celiastyle.sass */
 nav .social a {
   line-height: 0;
   font-size: 0;
@@ -313,23 +274,41 @@ nav .social a {
   margin: 0 4px;
 }
 @media (max-width: 600px) {
-  /* line 136, ../sass/celiastyle.sass */
+  /* line 114, ../sass/celiastyle.sass */
   nav .social a {
     margin: 10px;
   }
 }
-/* line 143, ../sass/celiastyle.sass */
+/* line 121, ../sass/celiastyle.sass */
 nav .social a img {
   width: 50px;
 }
 @media (max-width: 600px) {
-  /* line 143, ../sass/celiastyle.sass */
+  /* line 121, ../sass/celiastyle.sass */
   nav .social a img {
     width: 40px;
   }
 }
+/* line 126, ../sass/celiastyle.sass */
+nav.topNav {
+  top: 2px;
+  bottom: auto;
+}
+/* line 129, ../sass/celiastyle.sass */
+nav.topNav a {
+  display: inline-block;
+  width: 96px;
+  padding: 3px;
+  text-align: center;
+  background-color: #eeeaeb;
+  margin-top: 3px;
+}
+/* line 136, ../sass/celiastyle.sass */
+nav.topNav a.comingSoon {
+  width: 126px;
+}
 
-/* line 150, ../sass/celiastyle.sass */
+/* line 143, ../sass/celiastyle.sass */
 section {
   width: 100%;
   height: 100%;
@@ -349,7 +328,7 @@ section {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 161, ../sass/celiastyle.sass */
+/* line 154, ../sass/celiastyle.sass */
 section.extend {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -357,24 +336,24 @@ section.extend {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 163, ../sass/celiastyle.sass */
+/* line 156, ../sass/celiastyle.sass */
 section h1 {
   text-align: center;
   font-size: 4em;
 }
-/* line 166, ../sass/celiastyle.sass */
+/* line 159, ../sass/celiastyle.sass */
 section .container {
   margin: 0 auto;
   max-width: 600px;
 }
-/* line 169, ../sass/celiastyle.sass */
+/* line 162, ../sass/celiastyle.sass */
 section .navSpacer {
   clear: both;
   height: 140px;
   width: 100%;
 }
 
-/* line 175, ../sass/celiastyle.sass */
+/* line 168, ../sass/celiastyle.sass */
 #home {
   z-index: 10;
   background: transparent;
@@ -386,17 +365,17 @@ section .navSpacer {
   text-align: center;
   position: relative;
 }
-/* line 182, ../sass/celiastyle.sass */
+/* line 175, ../sass/celiastyle.sass */
 #home .mainLogo {
   cursor: pointer;
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   margin-left: -225px;
   margin-top: -225px;
 }
 @media (max-width: 520px), (max-height: 600px) {
-  /* line 182, ../sass/celiastyle.sass */
+  /* line 175, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 350px;
     margin-left: -175px;
@@ -404,29 +383,37 @@ section .navSpacer {
   }
 }
 @media (max-width: 400px), (max-height: 440px) {
-  /* line 182, ../sass/celiastyle.sass */
+  /* line 175, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 250px;
     margin-left: -125px;
     margin-top: -125px;
   }
 }
+@media (max-height: 400px) {
+  /* line 175, ../sass/celiastyle.sass */
+  #home .mainLogo {
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+  }
+}
 
-/* line 199, ../sass/celiastyle.sass */
+/* line 196, ../sass/celiastyle.sass */
 #stockists {
   z-index: 20;
   background: #eeeaeb;
 }
-/* line 202, ../sass/celiastyle.sass */
+/* line 199, ../sass/celiastyle.sass */
 #stockists .map {
   position: absolute;
-  top: 10px;
+  top: 55px;
   bottom: 0;
   left: 10px;
   right: 10px;
   z-index: 21;
 }
-/* line 209, ../sass/celiastyle.sass */
+/* line 206, ../sass/celiastyle.sass */
 #stockists .menuBackground {
   position: absolute;
   z-index: 22;
@@ -437,7 +424,7 @@ section .navSpacer {
   background: #eeeaeb;
 }
 
-/* line 219, ../sass/celiastyle.sass */
+/* line 216, ../sass/celiastyle.sass */
 #info, #buyOnline {
   z-index: 30;
   overflow-y: scroll;
@@ -445,150 +432,150 @@ section .navSpacer {
   background: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
-/* line 225, ../sass/celiastyle.sass */
+/* line 222, ../sass/celiastyle.sass */
 #info .simpleLogo, #buyOnline .simpleLogo {
   width: 160px;
   margin: 20px 0 10px 0;
 }
 @media (max-width: 600px) {
-  /* line 225, ../sass/celiastyle.sass */
+  /* line 222, ../sass/celiastyle.sass */
   #info .simpleLogo, #buyOnline .simpleLogo {
     width: 100px;
   }
 }
-/* line 230, ../sass/celiastyle.sass */
+/* line 227, ../sass/celiastyle.sass */
 #info p, #buyOnline p {
   line-height: 1.5em;
   margin: 10px 10px 1.5em 10px;
 }
-/* line 233, ../sass/celiastyle.sass */
+/* line 230, ../sass/celiastyle.sass */
 #info h2, #buyOnline h2 {
   font-size: 2em;
   text-transform: uppercase;
   margin: 1em 0 -1em 0;
   clear: both;
 }
-/* line 239, ../sass/celiastyle.sass */
+/* line 236, ../sass/celiastyle.sass */
 #info ul li, #buyOnline ul li {
   margin-bottom: 8px;
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 243, ../sass/celiastyle.sass */
+/* line 240, ../sass/celiastyle.sass */
 #info ul li.active, #buyOnline ul li.active {
   font-weight: bold;
   font-style: italic;
   color: black;
 }
-/* line 247, ../sass/celiastyle.sass */
+/* line 244, ../sass/celiastyle.sass */
 #info .about, #info .contact, #info .pressPr, #info .ingredients, #info .contact, #buyOnline .about, #buyOnline .contact, #buyOnline .pressPr, #buyOnline .ingredients, #buyOnline .contact {
   clear: both;
 }
-/* line 249, ../sass/celiastyle.sass */
+/* line 246, ../sass/celiastyle.sass */
 #info .subNav, #buyOnline .subNav {
   clear: both;
   padding-top: 2em;
 }
-/* line 252, ../sass/celiastyle.sass */
+/* line 249, ../sass/celiastyle.sass */
 #info .topNav, #buyOnline .topNav {
-  margin-top: 1em;
+  margin-top: 65px;
 }
-/* line 254, ../sass/celiastyle.sass */
+/* line 251, ../sass/celiastyle.sass */
 #info .object, #buyOnline .object {
   clear: both;
   padding-top: 4em;
 }
-/* line 257, ../sass/celiastyle.sass */
+/* line 254, ../sass/celiastyle.sass */
 #info .object h3, #buyOnline .object h3 {
   clear: both;
   font-size: 1.5em;
   padding-bottom: 20px;
   color: #71950a;
 }
-/* line 262, ../sass/celiastyle.sass */
+/* line 259, ../sass/celiastyle.sass */
 #info .object img, #buyOnline .object img {
   float: left;
   width: 20%;
 }
 @media (max-width: 340px) {
-  /* line 262, ../sass/celiastyle.sass */
+  /* line 259, ../sass/celiastyle.sass */
   #info .object img, #buyOnline .object img {
     position: relative;
     top: 1em;
   }
 }
-/* line 269, ../sass/celiastyle.sass */
+/* line 266, ../sass/celiastyle.sass */
 #info .object p, #buyOnline .object p {
   float: right;
   text-align: left;
   width: 70%;
 }
-/* line 275, ../sass/celiastyle.sass */
+/* line 272, ../sass/celiastyle.sass */
 #info #aboutContainer .object, #buyOnline #aboutContainer .object {
   padding-top: 1em;
 }
-/* line 277, ../sass/celiastyle.sass */
+/* line 274, ../sass/celiastyle.sass */
 #info #aboutContainer .object h3, #buyOnline #aboutContainer .object h3 {
   padding: 4px;
   background-color: #eeeaeb;
   cursor: pointer;
 }
-/* line 281, ../sass/celiastyle.sass */
+/* line 278, ../sass/celiastyle.sass */
 #info #aboutContainer .object p, #buyOnline #aboutContainer .object p {
   padding-top: 10px;
   display: none;
 }
-/* line 284, ../sass/celiastyle.sass */
+/* line 281, ../sass/celiastyle.sass */
 #info #aboutContainer .object img, #buyOnline #aboutContainer .object img {
   padding-top: 10px;
   display: none;
 }
-/* line 288, ../sass/celiastyle.sass */
+/* line 285, ../sass/celiastyle.sass */
 #info .object.ingredient .left, #buyOnline .object.ingredient .left {
   float: left;
   font-weight: bold;
   width: 25%;
   text-align: right;
 }
-/* line 293, ../sass/celiastyle.sass */
+/* line 290, ../sass/celiastyle.sass */
 #info .object.ingredient .right, #buyOnline .object.ingredient .right {
   text-align: left;
   float: right;
   width: 62%;
 }
-/* line 297, ../sass/celiastyle.sass */
+/* line 294, ../sass/celiastyle.sass */
 #info .object.ingredient .clear, #buyOnline .object.ingredient .clear {
   clear: both;
 }
-/* line 301, ../sass/celiastyle.sass */
+/* line 298, ../sass/celiastyle.sass */
 #info .pressPr .object img, #buyOnline .pressPr .object img {
   width: 50%;
   float: none;
   margin: 2em 0;
 }
-/* line 307, ../sass/celiastyle.sass */
+/* line 304, ../sass/celiastyle.sass */
 #info .contact .object img, #info .onlineStockists .object img, #buyOnline .contact .object img, #buyOnline .onlineStockists .object img {
   float: left;
 }
-/* line 309, ../sass/celiastyle.sass */
+/* line 306, ../sass/celiastyle.sass */
 #info .contact .object p, #info .onlineStockists .object p, #buyOnline .contact .object p, #buyOnline .onlineStockists .object p {
   float: right;
 }
-/* line 311, ../sass/celiastyle.sass */
+/* line 308, ../sass/celiastyle.sass */
 #info .triggerNewsletter, #buyOnline .triggerNewsletter {
   text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
 
-/* line 317, ../sass/celiastyle.sass */
+/* line 314, ../sass/celiastyle.sass */
 #buyOnline h1 {
   font-size: 3em;
-  padding-top: 1em;
+  padding-top: 1.3em;
   color: black;
   text-transform: uppercase;
 }
-/* line 322, ../sass/celiastyle.sass */
+/* line 319, ../sass/celiastyle.sass */
 #buyOnline h2 {
   font-size: 1em;
   display: inline-block;
@@ -597,12 +584,12 @@ section .navSpacer {
   text-transform: none;
 }
 
-/* line 331, ../sass/celiastyle.sass */
+/* line 328, ../sass/celiastyle.sass */
 #newsletter, #specialOfferPopup {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 334, ../sass/celiastyle.sass */
+/* line 331, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup, #specialOfferPopup #mc_embed_signup {
   text-align: center;
   background-color: black;
@@ -620,31 +607,31 @@ section .navSpacer {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 346, ../sass/celiastyle.sass */
+/* line 343, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup form, #specialOfferPopup #mc_embed_signup form {
   text-align: center;
 }
-/* line 348, ../sass/celiastyle.sass */
+/* line 345, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup img, #specialOfferPopup #mc_embed_signup img {
   display: inline-block;
   width: 30%;
 }
-/* line 351, ../sass/celiastyle.sass */
+/* line 348, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup h2, #specialOfferPopup #mc_embed_signup h2 {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4em;
   margin: 1em 0;
 }
-/* line 356, ../sass/celiastyle.sass */
+/* line 353, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .mc-field-group, #specialOfferPopup #mc_embed_signup .mc-field-group {
   padding-bottom: 0;
 }
-/* line 359, ../sass/celiastyle.sass */
+/* line 356, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .button, #specialOfferPopup #mc_embed_signup .button {
   width: 210px;
 }
-/* line 362, ../sass/celiastyle.sass */
+/* line 359, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup #noThanks, #specialOfferPopup #mc_embed_signup #noThanks {
   position: relative;
   left: 2px;
