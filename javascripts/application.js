@@ -70,10 +70,8 @@
 
     // ABOUT SECTIONS
     $('#aboutContainer').on('click touch', 'h3', function (e) {
-      if ($(e.target).next().css('display') !== 'block') {
-        $('#aboutContainer').find('p, img').slideUp();
-        $(e.target).next().slideDown().next().slideDown();
-      }
+      $(e.target).next().slideToggle().next().slideToggle();
+      $(e.target).find('span.arrow-down').toggleClass('open');
     });
 
     // MAILCHIMP POPUP
