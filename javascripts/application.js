@@ -24,7 +24,7 @@
       }, 500);
     });
 
-    $('a.info').bind('click touch', function(e) {
+    $('a.info, .mainLogo').bind('click touch', function(e) {
       e.preventDefault();
       e.stopPropagation();
       $('#info').toggleClass('extend');

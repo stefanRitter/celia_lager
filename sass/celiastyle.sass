@@ -10,18 +10,6 @@ $background-color: #EEEAEB
 $celia-green: #71950a
 
 
-%celiaLogo
-  background: url(../images/celia-logo-color-big.png) no-repeat fixed 
-  background-position: 50% 30%
-
-  @media (max-width: 490px)
-    +background-size( 390px auto)
-  @media (max-width: 400px)
-    +background-size( 320px auto)
-  @media (max-width: 330px)
-    +background-size( 270px auto)
-
-
 // **************************************************************************************** GENERAL
 html, body
   font-family: Raleway, Helvetica, sans-serif
@@ -32,9 +20,6 @@ html, body
 
 html
   background: $background-color
-
-body
-  @extend %celiaLogo
 
 .noHeight
   height: 0
@@ -106,16 +91,13 @@ a
 // **************************************************************************************** NAVIGATION
 nav
   position: fixed
-  bottom: 30px
+  bottom: 0
   width: 100%
-  height: 72px
   z-index: 2000
   text-align: center
   text-transform: uppercase
   +transform( translate(0, 130px) )
   +transition( transform 0.5s )
-  @media (max-width: 600px)
-    bottom: 55px
   &.moveUp
     +transform( translate(0, 0) )
   .stockists, .info
@@ -150,7 +132,7 @@ nav
   .social
     display: inline-block
     @media (max-width: 600px)
-      margin: 15px 0
+      margin-top: 15px
     a
       line-height: 0
       font-size: 0
@@ -194,6 +176,25 @@ section
   z-index: 10
   background: transparent
   +transform( translate(0, 0) )
+  text-align: center
+  position: relative
+
+  .mainLogo
+    cursor: pointer
+    position: absolute
+    top: 40%
+    left: 50%
+    margin-left: -225px
+    margin-top: -225px
+    
+    @media (max-width: 520px), (max-height: 600px)
+      width: 350px
+      margin-left: -175px
+      margin-top: -175px
+    @media (max-width: 400px), (max-height: 440px)
+      width: 250px
+      margin-left: -125px
+      margin-top: -125px
 
 #stockists
   z-index: 20
@@ -334,7 +335,7 @@ section
     width: 300px
     padding: 10px
     position: absolute
-    top: 25%
+    top: 10%
     left: 50%
     margin-left: -160px
     +border-radius( 6px )
