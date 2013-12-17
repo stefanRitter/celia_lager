@@ -55,7 +55,7 @@
       if($('a.buyOnline').text() !== 'Home') {
         $('a.buyOnline').text('Home');
       } else {
-        $('a.buyOnline').text('Stockists');
+        $('a.buyOnline').text('Buy Online');
       }
     });
 
