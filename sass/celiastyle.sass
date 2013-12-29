@@ -1,7 +1,7 @@
 
 
 @import "compass/reset"
-@import "compass"
+@import "compass/css3"
 
 
 // **************************************************************************************** VARIABLES
@@ -133,8 +133,13 @@ nav
       text-align: center
       background-color: $background-color
       margin-top: 3px
+      @media (max-width: 430px)
+        width: 79px
+        font-size: 12px
       &.comingSoon
         width: 126px
+        @media (max-width: 430px)
+          width: 93px
 
 
 
