@@ -1,4 +1,4 @@
-/* line 17, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../.rvm/gems/ruby-2.1.0-rc1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -297,18 +297,31 @@ nav.topNav {
 /* line 129, ../sass/celiastyle.sass */
 nav.topNav a {
   display: inline-block;
-  width: 96px;
+  width: 100px;
   padding: 3px;
   text-align: center;
   background-color: #eeeaeb;
   margin-top: 3px;
 }
-/* line 136, ../sass/celiastyle.sass */
+@media (max-width: 463px) {
+  /* line 129, ../sass/celiastyle.sass */
+  nav.topNav a {
+    width: 79px;
+    font-size: 12px;
+  }
+}
+/* line 139, ../sass/celiastyle.sass */
 nav.topNav a.comingSoon {
   width: 126px;
 }
+@media (max-width: 463px) {
+  /* line 139, ../sass/celiastyle.sass */
+  nav.topNav a.comingSoon {
+    width: 94px;
+  }
+}
 
-/* line 143, ../sass/celiastyle.sass */
+/* line 148, ../sass/celiastyle.sass */
 section {
   width: 100%;
   height: 100%;
@@ -328,7 +341,7 @@ section {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 154, ../sass/celiastyle.sass */
+/* line 159, ../sass/celiastyle.sass */
 section.extend {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -336,24 +349,24 @@ section.extend {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 156, ../sass/celiastyle.sass */
+/* line 161, ../sass/celiastyle.sass */
 section h1 {
   text-align: center;
   font-size: 4em;
 }
-/* line 159, ../sass/celiastyle.sass */
+/* line 164, ../sass/celiastyle.sass */
 section .container {
   margin: 0 auto;
   max-width: 600px;
 }
-/* line 162, ../sass/celiastyle.sass */
+/* line 167, ../sass/celiastyle.sass */
 section .navSpacer {
   clear: both;
   height: 140px;
   width: 100%;
 }
 
-/* line 168, ../sass/celiastyle.sass */
+/* line 173, ../sass/celiastyle.sass */
 #home {
   z-index: 10;
   background: transparent;
@@ -365,7 +378,7 @@ section .navSpacer {
   text-align: center;
   position: relative;
 }
-/* line 175, ../sass/celiastyle.sass */
+/* line 180, ../sass/celiastyle.sass */
 #home .mainLogo {
   cursor: pointer;
   position: absolute;
@@ -375,7 +388,7 @@ section .navSpacer {
   margin-top: -225px;
 }
 @media (max-width: 520px), (max-height: 600px) {
-  /* line 175, ../sass/celiastyle.sass */
+  /* line 180, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 350px;
     margin-left: -175px;
@@ -383,7 +396,7 @@ section .navSpacer {
   }
 }
 @media (max-width: 400px), (max-height: 440px) {
-  /* line 175, ../sass/celiastyle.sass */
+  /* line 180, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 250px;
     margin-left: -125px;
@@ -391,7 +404,7 @@ section .navSpacer {
   }
 }
 @media (max-height: 400px) {
-  /* line 175, ../sass/celiastyle.sass */
+  /* line 180, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 200px;
     margin-top: -100px;
@@ -399,12 +412,12 @@ section .navSpacer {
   }
 }
 
-/* line 196, ../sass/celiastyle.sass */
+/* line 201, ../sass/celiastyle.sass */
 #stockists {
   z-index: 20;
   background: #eeeaeb;
 }
-/* line 199, ../sass/celiastyle.sass */
+/* line 204, ../sass/celiastyle.sass */
 #stockists .map {
   position: absolute;
   top: 55px;
@@ -413,7 +426,7 @@ section .navSpacer {
   right: 10px;
   z-index: 21;
 }
-/* line 206, ../sass/celiastyle.sass */
+/* line 211, ../sass/celiastyle.sass */
 #stockists .menuBackground {
   position: absolute;
   z-index: 22;
@@ -424,7 +437,7 @@ section .navSpacer {
   background: #eeeaeb;
 }
 
-/* line 216, ../sass/celiastyle.sass */
+/* line 221, ../sass/celiastyle.sass */
 #info, #buyOnline {
   z-index: 30;
   overflow-y: scroll;
@@ -432,150 +445,150 @@ section .navSpacer {
   background: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
-/* line 222, ../sass/celiastyle.sass */
+/* line 227, ../sass/celiastyle.sass */
 #info .simpleLogo, #buyOnline .simpleLogo {
   width: 160px;
   margin: 20px 0 10px 0;
 }
 @media (max-width: 600px) {
-  /* line 222, ../sass/celiastyle.sass */
+  /* line 227, ../sass/celiastyle.sass */
   #info .simpleLogo, #buyOnline .simpleLogo {
     width: 100px;
   }
 }
-/* line 227, ../sass/celiastyle.sass */
+/* line 232, ../sass/celiastyle.sass */
 #info p, #buyOnline p {
   line-height: 1.5em;
   margin: 10px 10px 1.5em 10px;
 }
-/* line 230, ../sass/celiastyle.sass */
+/* line 235, ../sass/celiastyle.sass */
 #info h2, #buyOnline h2 {
   font-size: 2em;
   text-transform: uppercase;
   margin: 1em 0 -1em 0;
   clear: both;
 }
-/* line 236, ../sass/celiastyle.sass */
+/* line 241, ../sass/celiastyle.sass */
 #info ul li, #buyOnline ul li {
   margin-bottom: 8px;
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 240, ../sass/celiastyle.sass */
+/* line 245, ../sass/celiastyle.sass */
 #info ul li.active, #buyOnline ul li.active {
   font-weight: bold;
   font-style: italic;
   color: black;
 }
-/* line 244, ../sass/celiastyle.sass */
+/* line 249, ../sass/celiastyle.sass */
 #info .about, #info .contact, #info .pressPr, #info .ingredients, #info .contact, #buyOnline .about, #buyOnline .contact, #buyOnline .pressPr, #buyOnline .ingredients, #buyOnline .contact {
   clear: both;
 }
-/* line 246, ../sass/celiastyle.sass */
+/* line 251, ../sass/celiastyle.sass */
 #info .subNav, #buyOnline .subNav {
   clear: both;
   padding-top: 2em;
 }
-/* line 249, ../sass/celiastyle.sass */
+/* line 254, ../sass/celiastyle.sass */
 #info .topNav, #buyOnline .topNav {
   margin-top: 65px;
 }
-/* line 251, ../sass/celiastyle.sass */
+/* line 256, ../sass/celiastyle.sass */
 #info .object, #buyOnline .object {
   clear: both;
   padding-top: 4em;
 }
-/* line 254, ../sass/celiastyle.sass */
+/* line 259, ../sass/celiastyle.sass */
 #info .object h3, #buyOnline .object h3 {
   clear: both;
   font-size: 1.5em;
   padding-bottom: 20px;
   color: #71950a;
 }
-/* line 259, ../sass/celiastyle.sass */
+/* line 264, ../sass/celiastyle.sass */
 #info .object img, #buyOnline .object img {
   float: left;
   width: 20%;
 }
 @media (max-width: 340px) {
-  /* line 259, ../sass/celiastyle.sass */
+  /* line 264, ../sass/celiastyle.sass */
   #info .object img, #buyOnline .object img {
     position: relative;
     top: 1em;
   }
 }
-/* line 266, ../sass/celiastyle.sass */
+/* line 271, ../sass/celiastyle.sass */
 #info .object p, #buyOnline .object p {
   float: right;
   text-align: left;
   width: 70%;
 }
-/* line 272, ../sass/celiastyle.sass */
+/* line 277, ../sass/celiastyle.sass */
 #info #aboutContainer .object, #buyOnline #aboutContainer .object {
   padding-top: 1em;
 }
-/* line 274, ../sass/celiastyle.sass */
+/* line 279, ../sass/celiastyle.sass */
 #info #aboutContainer .object h3, #buyOnline #aboutContainer .object h3 {
   padding: 4px;
   background-color: #eeeaeb;
   cursor: pointer;
 }
-/* line 278, ../sass/celiastyle.sass */
+/* line 283, ../sass/celiastyle.sass */
 #info #aboutContainer .object p, #buyOnline #aboutContainer .object p {
   padding-top: 10px;
   display: none;
 }
-/* line 281, ../sass/celiastyle.sass */
+/* line 286, ../sass/celiastyle.sass */
 #info #aboutContainer .object img, #buyOnline #aboutContainer .object img {
   padding-top: 10px;
   display: none;
 }
-/* line 285, ../sass/celiastyle.sass */
+/* line 290, ../sass/celiastyle.sass */
 #info .object.ingredient .left, #buyOnline .object.ingredient .left {
   float: left;
   font-weight: bold;
   width: 25%;
   text-align: right;
 }
-/* line 290, ../sass/celiastyle.sass */
+/* line 295, ../sass/celiastyle.sass */
 #info .object.ingredient .right, #buyOnline .object.ingredient .right {
   text-align: left;
   float: right;
   width: 62%;
 }
-/* line 294, ../sass/celiastyle.sass */
+/* line 299, ../sass/celiastyle.sass */
 #info .object.ingredient .clear, #buyOnline .object.ingredient .clear {
   clear: both;
 }
-/* line 298, ../sass/celiastyle.sass */
+/* line 303, ../sass/celiastyle.sass */
 #info .pressPr .object img, #buyOnline .pressPr .object img {
   width: 50%;
   float: none;
   margin: 2em 0;
 }
-/* line 304, ../sass/celiastyle.sass */
+/* line 309, ../sass/celiastyle.sass */
 #info .contact .object img, #info .onlineStockists .object img, #buyOnline .contact .object img, #buyOnline .onlineStockists .object img {
   float: left;
 }
-/* line 306, ../sass/celiastyle.sass */
+/* line 311, ../sass/celiastyle.sass */
 #info .contact .object p, #info .onlineStockists .object p, #buyOnline .contact .object p, #buyOnline .onlineStockists .object p {
   float: right;
 }
-/* line 308, ../sass/celiastyle.sass */
+/* line 313, ../sass/celiastyle.sass */
 #info .triggerNewsletter, #buyOnline .triggerNewsletter {
   text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
 
-/* line 314, ../sass/celiastyle.sass */
+/* line 319, ../sass/celiastyle.sass */
 #buyOnline h1 {
   font-size: 3em;
   padding-top: 1.3em;
   color: black;
   text-transform: uppercase;
 }
-/* line 319, ../sass/celiastyle.sass */
+/* line 324, ../sass/celiastyle.sass */
 #buyOnline h2 {
   font-size: 1em;
   display: inline-block;
@@ -584,12 +597,12 @@ section .navSpacer {
   text-transform: none;
 }
 
-/* line 328, ../sass/celiastyle.sass */
+/* line 333, ../sass/celiastyle.sass */
 #newsletter, #specialOfferPopup {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 331, ../sass/celiastyle.sass */
+/* line 336, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup, #specialOfferPopup #mc_embed_signup {
   text-align: center;
   background-color: black;
@@ -607,31 +620,31 @@ section .navSpacer {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 343, ../sass/celiastyle.sass */
+/* line 348, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup form, #specialOfferPopup #mc_embed_signup form {
   text-align: center;
 }
-/* line 345, ../sass/celiastyle.sass */
+/* line 350, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup img, #specialOfferPopup #mc_embed_signup img {
   display: inline-block;
   width: 30%;
 }
-/* line 348, ../sass/celiastyle.sass */
+/* line 353, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup h2, #specialOfferPopup #mc_embed_signup h2 {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4em;
   margin: 1em 0;
 }
-/* line 353, ../sass/celiastyle.sass */
+/* line 358, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .mc-field-group, #specialOfferPopup #mc_embed_signup .mc-field-group {
   padding-bottom: 0;
 }
-/* line 356, ../sass/celiastyle.sass */
+/* line 361, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .button, #specialOfferPopup #mc_embed_signup .button {
   width: 210px;
 }
-/* line 359, ../sass/celiastyle.sass */
+/* line 364, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup #noThanks, #specialOfferPopup #mc_embed_signup #noThanks {
   position: relative;
   left: 2px;
