@@ -97,7 +97,7 @@ a {
 .specialOffer {
   position: fixed;
   position: fixed;
-  top: 60%;
+  top: 58%;
   right: 10%;
   -webkit-transform: rotate(15deg);
   -moz-transform: rotate(15deg);
@@ -128,17 +128,13 @@ a {
   }
 }
 @media (max-width: 843px) {
-  /* line 34, ../sass/celiastyle.sass */
-  .specialOffer {
-    right: 2px;
-  }
-  /* line 49, ../sass/celiastyle.sass */
+  /* line 48, ../sass/celiastyle.sass */
   .specialOffer img {
     width: 80%;
     float: right;
   }
 }
-@media (max-width: 520px) {
+@media (max-width: 650px) {
   /* line 34, ../sass/celiastyle.sass */
   .specialOffer {
     -webkit-transform: rotate(0);
@@ -147,48 +143,54 @@ a {
     -o-transform: rotate(0);
     transform: rotate(0);
   }
-  /* line 54, ../sass/celiastyle.sass */
+  /* line 53, ../sass/celiastyle.sass */
   .specialOffer img {
     width: 50%;
   }
 }
+@media (max-width: 500px) {
+  /* line 34, ../sass/celiastyle.sass */
+  .specialOffer {
+    top: 10%;
+  }
+}
 
-/* line 57, ../sass/celiastyle.sass */
+/* line 58, ../sass/celiastyle.sass */
 .leftHandButton {
   position: fixed;
   position: fixed;
   top: 60%;
   left: 10%;
 }
-/* line 62, ../sass/celiastyle.sass */
+/* line 63, ../sass/celiastyle.sass */
 .leftHandButton img {
   width: 100%;
 }
 @media (max-width: 1048px) {
-  /* line 57, ../sass/celiastyle.sass */
+  /* line 58, ../sass/celiastyle.sass */
   .leftHandButton {
     left: 5px;
   }
 }
 @media (max-width: 843px) {
-  /* line 57, ../sass/celiastyle.sass */
+  /* line 58, ../sass/celiastyle.sass */
   .leftHandButton {
     left: 2px;
   }
-  /* line 68, ../sass/celiastyle.sass */
+  /* line 69, ../sass/celiastyle.sass */
   .leftHandButton img {
     width: 80%;
     float: left;
   }
 }
 @media (max-width: 520px) {
-  /* line 72, ../sass/celiastyle.sass */
+  /* line 73, ../sass/celiastyle.sass */
   .leftHandButton img {
     width: 50%;
   }
 }
 
-/* line 75, ../sass/celiastyle.sass */
+/* line 76, ../sass/celiastyle.sass */
 .arrow-down {
   width: 0;
   height: 0;
@@ -209,7 +211,7 @@ a {
   -o-transform: rotate(0);
   transform: rotate(0);
 }
-/* line 87, ../sass/celiastyle.sass */
+/* line 88, ../sass/celiastyle.sass */
 .arrow-down.open {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -218,7 +220,7 @@ a {
   transform: rotate(180deg);
 }
 
-/* line 92, ../sass/celiastyle.sass */
+/* line 93, ../sass/celiastyle.sass */
 nav {
   position: fixed;
   bottom: 5px;
@@ -227,7 +229,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 99, ../sass/celiastyle.sass */
+/* line 100, ../sass/celiastyle.sass */
 nav.down {
   -webkit-transform: translate(0, 130px);
   -moz-transform: translate(0, 130px);
@@ -239,7 +241,7 @@ nav.down {
   -o-transition: -o-transform 0.5s;
   transition: transform 0.5s;
 }
-/* line 102, ../sass/celiastyle.sass */
+/* line 103, ../sass/celiastyle.sass */
 nav.moveUp {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -247,26 +249,26 @@ nav.moveUp {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 104, ../sass/celiastyle.sass */
+/* line 105, ../sass/celiastyle.sass */
 nav a {
   text-decoration: none;
   color: inherit;
 }
-/* line 107, ../sass/celiastyle.sass */
+/* line 108, ../sass/celiastyle.sass */
 nav a:hover {
   color: black;
 }
-/* line 110, ../sass/celiastyle.sass */
+/* line 111, ../sass/celiastyle.sass */
 nav .social {
   display: inline-block;
 }
 @media (max-width: 600px) {
-  /* line 110, ../sass/celiastyle.sass */
+  /* line 111, ../sass/celiastyle.sass */
   nav .social {
     margin-top: 15px;
   }
 }
-/* line 114, ../sass/celiastyle.sass */
+/* line 115, ../sass/celiastyle.sass */
 nav .social a {
   line-height: 0;
   font-size: 0;
@@ -274,27 +276,27 @@ nav .social a {
   margin: 0 4px;
 }
 @media (max-width: 600px) {
-  /* line 114, ../sass/celiastyle.sass */
+  /* line 115, ../sass/celiastyle.sass */
   nav .social a {
     margin: 10px;
   }
 }
-/* line 121, ../sass/celiastyle.sass */
+/* line 122, ../sass/celiastyle.sass */
 nav .social a img {
   width: 50px;
 }
 @media (max-width: 600px) {
-  /* line 121, ../sass/celiastyle.sass */
+  /* line 122, ../sass/celiastyle.sass */
   nav .social a img {
     width: 40px;
   }
 }
-/* line 126, ../sass/celiastyle.sass */
+/* line 127, ../sass/celiastyle.sass */
 nav.topNav {
   top: 2px;
   bottom: auto;
 }
-/* line 129, ../sass/celiastyle.sass */
+/* line 130, ../sass/celiastyle.sass */
 nav.topNav a {
   display: inline-block;
   width: 100px;
@@ -304,24 +306,24 @@ nav.topNav a {
   margin-top: 3px;
 }
 @media (max-width: 463px) {
-  /* line 129, ../sass/celiastyle.sass */
+  /* line 130, ../sass/celiastyle.sass */
   nav.topNav a {
     width: 79px;
     font-size: 12px;
   }
 }
-/* line 139, ../sass/celiastyle.sass */
+/* line 140, ../sass/celiastyle.sass */
 nav.topNav a.comingSoon {
   width: 126px;
 }
 @media (max-width: 463px) {
-  /* line 139, ../sass/celiastyle.sass */
+  /* line 140, ../sass/celiastyle.sass */
   nav.topNav a.comingSoon {
     width: 94px;
   }
 }
 
-/* line 148, ../sass/celiastyle.sass */
+/* line 149, ../sass/celiastyle.sass */
 section {
   width: 100%;
   height: 100%;
@@ -341,7 +343,7 @@ section {
   -o-transition: all 1s;
   transition: all 1s;
 }
-/* line 159, ../sass/celiastyle.sass */
+/* line 160, ../sass/celiastyle.sass */
 section.extend {
   -webkit-transform: translate(0, 0);
   -moz-transform: translate(0, 0);
@@ -349,24 +351,24 @@ section.extend {
   -o-transform: translate(0, 0);
   transform: translate(0, 0);
 }
-/* line 161, ../sass/celiastyle.sass */
+/* line 162, ../sass/celiastyle.sass */
 section h1 {
   text-align: center;
   font-size: 4em;
 }
-/* line 164, ../sass/celiastyle.sass */
+/* line 165, ../sass/celiastyle.sass */
 section .container {
   margin: 0 auto;
   max-width: 600px;
 }
-/* line 167, ../sass/celiastyle.sass */
+/* line 168, ../sass/celiastyle.sass */
 section .navSpacer {
   clear: both;
   height: 140px;
   width: 100%;
 }
 
-/* line 173, ../sass/celiastyle.sass */
+/* line 174, ../sass/celiastyle.sass */
 #home {
   z-index: 10;
   background: transparent;
@@ -377,47 +379,73 @@ section .navSpacer {
   transform: translate(0, 0);
   text-align: center;
   position: relative;
+  display: table;
 }
-/* line 180, ../sass/celiastyle.sass */
+/* line 182, ../sass/celiastyle.sass */
+#home .verticalCenter {
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 186, ../sass/celiastyle.sass */
 #home .mainLogo {
   cursor: pointer;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  margin-left: -225px;
-  margin-top: -225px;
 }
-@media (max-width: 520px), (max-height: 600px) {
-  /* line 180, ../sass/celiastyle.sass */
+@media (max-width: 520px), (max-height: 650px) {
+  /* line 186, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 350px;
-    margin-left: -175px;
-    margin-top: -175px;
   }
 }
-@media (max-width: 400px), (max-height: 440px) {
-  /* line 180, ../sass/celiastyle.sass */
+@media (max-width: 400px), (max-height: 530px) {
+  /* line 186, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 250px;
-    margin-left: -125px;
-    margin-top: -125px;
   }
 }
-@media (max-height: 400px) {
-  /* line 180, ../sass/celiastyle.sass */
+@media (max-height: 420px) {
+  /* line 186, ../sass/celiastyle.sass */
   #home .mainLogo {
     width: 200px;
-    margin-top: -100px;
-    margin-left: -100px;
+  }
+}
+@media (max-height: 360px) {
+  /* line 186, ../sass/celiastyle.sass */
+  #home .mainLogo {
+    width: 150px;
+  }
+}
+@media (max-height: 325px) {
+  /* line 186, ../sass/celiastyle.sass */
+  #home .mainLogo {
+    width: 100px;
+  }
+}
+/* line 200, ../sass/celiastyle.sass */
+#home .homepageQuote {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  padding-top: 1em;
+  margin-bottom: 2em;
+  line-height: 1.3em;
+}
+/* line 207, ../sass/celiastyle.sass */
+#home .homepageQuote strong {
+  text-decoration: underline;
+}
+@media (max-height: 325px) {
+  /* line 200, ../sass/celiastyle.sass */
+  #home .homepageQuote {
+    font-size: 10px;
   }
 }
 
-/* line 201, ../sass/celiastyle.sass */
+/* line 212, ../sass/celiastyle.sass */
 #stockists {
   z-index: 20;
   background: #eeeaeb;
 }
-/* line 204, ../sass/celiastyle.sass */
+/* line 215, ../sass/celiastyle.sass */
 #stockists .map {
   position: absolute;
   top: 55px;
@@ -426,7 +454,7 @@ section .navSpacer {
   right: 10px;
   z-index: 21;
 }
-/* line 211, ../sass/celiastyle.sass */
+/* line 222, ../sass/celiastyle.sass */
 #stockists .menuBackground {
   position: absolute;
   z-index: 22;
@@ -437,7 +465,7 @@ section .navSpacer {
   background: #eeeaeb;
 }
 
-/* line 221, ../sass/celiastyle.sass */
+/* line 232, ../sass/celiastyle.sass */
 #info, #buyOnline {
   z-index: 30;
   overflow-y: scroll;
@@ -445,150 +473,150 @@ section .navSpacer {
   background: rgba(255, 255, 255, 0.95);
   text-align: center;
 }
-/* line 227, ../sass/celiastyle.sass */
+/* line 238, ../sass/celiastyle.sass */
 #info .simpleLogo, #buyOnline .simpleLogo {
   width: 160px;
   margin: 20px 0 10px 0;
 }
 @media (max-width: 600px) {
-  /* line 227, ../sass/celiastyle.sass */
+  /* line 238, ../sass/celiastyle.sass */
   #info .simpleLogo, #buyOnline .simpleLogo {
     width: 100px;
   }
 }
-/* line 232, ../sass/celiastyle.sass */
+/* line 243, ../sass/celiastyle.sass */
 #info p, #buyOnline p {
   line-height: 1.5em;
   margin: 10px 10px 1.5em 10px;
 }
-/* line 235, ../sass/celiastyle.sass */
+/* line 246, ../sass/celiastyle.sass */
 #info h2, #buyOnline h2 {
   font-size: 2em;
   text-transform: uppercase;
   margin: 1em 0 -1em 0;
   clear: both;
 }
-/* line 241, ../sass/celiastyle.sass */
+/* line 252, ../sass/celiastyle.sass */
 #info ul li, #buyOnline ul li {
   margin-bottom: 8px;
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 245, ../sass/celiastyle.sass */
+/* line 256, ../sass/celiastyle.sass */
 #info ul li.active, #buyOnline ul li.active {
   font-weight: bold;
   font-style: italic;
   color: black;
 }
-/* line 249, ../sass/celiastyle.sass */
+/* line 260, ../sass/celiastyle.sass */
 #info .about, #info .contact, #info .pressPr, #info .ingredients, #info .contact, #buyOnline .about, #buyOnline .contact, #buyOnline .pressPr, #buyOnline .ingredients, #buyOnline .contact {
   clear: both;
 }
-/* line 251, ../sass/celiastyle.sass */
+/* line 262, ../sass/celiastyle.sass */
 #info .subNav, #buyOnline .subNav {
   clear: both;
   padding-top: 2em;
 }
-/* line 254, ../sass/celiastyle.sass */
+/* line 265, ../sass/celiastyle.sass */
 #info .topNav, #buyOnline .topNav {
   margin-top: 65px;
 }
-/* line 256, ../sass/celiastyle.sass */
+/* line 267, ../sass/celiastyle.sass */
 #info .object, #buyOnline .object {
   clear: both;
   padding-top: 4em;
 }
-/* line 259, ../sass/celiastyle.sass */
+/* line 270, ../sass/celiastyle.sass */
 #info .object h3, #buyOnline .object h3 {
   clear: both;
   font-size: 1.5em;
   padding-bottom: 20px;
   color: #71950a;
 }
-/* line 264, ../sass/celiastyle.sass */
+/* line 275, ../sass/celiastyle.sass */
 #info .object img, #buyOnline .object img {
   float: left;
   width: 20%;
 }
 @media (max-width: 340px) {
-  /* line 264, ../sass/celiastyle.sass */
+  /* line 275, ../sass/celiastyle.sass */
   #info .object img, #buyOnline .object img {
     position: relative;
     top: 1em;
   }
 }
-/* line 271, ../sass/celiastyle.sass */
+/* line 282, ../sass/celiastyle.sass */
 #info .object p, #buyOnline .object p {
   float: right;
   text-align: left;
   width: 70%;
 }
-/* line 277, ../sass/celiastyle.sass */
+/* line 288, ../sass/celiastyle.sass */
 #info #aboutContainer .object, #buyOnline #aboutContainer .object {
   padding-top: 1em;
 }
-/* line 279, ../sass/celiastyle.sass */
+/* line 290, ../sass/celiastyle.sass */
 #info #aboutContainer .object h3, #buyOnline #aboutContainer .object h3 {
   padding: 4px;
   background-color: #eeeaeb;
   cursor: pointer;
 }
-/* line 283, ../sass/celiastyle.sass */
+/* line 294, ../sass/celiastyle.sass */
 #info #aboutContainer .object p, #buyOnline #aboutContainer .object p {
   padding-top: 10px;
   display: none;
 }
-/* line 286, ../sass/celiastyle.sass */
+/* line 297, ../sass/celiastyle.sass */
 #info #aboutContainer .object img, #buyOnline #aboutContainer .object img {
   padding-top: 10px;
   display: none;
 }
-/* line 290, ../sass/celiastyle.sass */
+/* line 301, ../sass/celiastyle.sass */
 #info .object.ingredient .left, #buyOnline .object.ingredient .left {
   float: left;
   font-weight: bold;
   width: 25%;
   text-align: right;
 }
-/* line 295, ../sass/celiastyle.sass */
+/* line 306, ../sass/celiastyle.sass */
 #info .object.ingredient .right, #buyOnline .object.ingredient .right {
   text-align: left;
   float: right;
   width: 62%;
 }
-/* line 299, ../sass/celiastyle.sass */
+/* line 310, ../sass/celiastyle.sass */
 #info .object.ingredient .clear, #buyOnline .object.ingredient .clear {
   clear: both;
 }
-/* line 303, ../sass/celiastyle.sass */
+/* line 314, ../sass/celiastyle.sass */
 #info .pressPr .object img, #buyOnline .pressPr .object img {
   width: 50%;
   float: none;
   margin: 2em 0;
 }
-/* line 309, ../sass/celiastyle.sass */
+/* line 320, ../sass/celiastyle.sass */
 #info .contact .object img, #info .onlineStockists .object img, #buyOnline .contact .object img, #buyOnline .onlineStockists .object img {
   float: left;
 }
-/* line 311, ../sass/celiastyle.sass */
+/* line 322, ../sass/celiastyle.sass */
 #info .contact .object p, #info .onlineStockists .object p, #buyOnline .contact .object p, #buyOnline .onlineStockists .object p {
   float: right;
 }
-/* line 313, ../sass/celiastyle.sass */
+/* line 324, ../sass/celiastyle.sass */
 #info .triggerNewsletter, #buyOnline .triggerNewsletter {
   text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
 }
 
-/* line 319, ../sass/celiastyle.sass */
+/* line 330, ../sass/celiastyle.sass */
 #buyOnline h1 {
   font-size: 3em;
   padding-top: 1.3em;
   color: black;
   text-transform: uppercase;
 }
-/* line 324, ../sass/celiastyle.sass */
+/* line 335, ../sass/celiastyle.sass */
 #buyOnline h2 {
   font-size: 1em;
   display: inline-block;
@@ -597,12 +625,12 @@ section .navSpacer {
   text-transform: none;
 }
 
-/* line 333, ../sass/celiastyle.sass */
+/* line 344, ../sass/celiastyle.sass */
 #newsletter, #specialOfferPopup {
   z-index: 10000;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 336, ../sass/celiastyle.sass */
+/* line 347, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup, #specialOfferPopup #mc_embed_signup {
   text-align: center;
   background-color: black;
@@ -620,31 +648,31 @@ section .navSpacer {
   -o-border-radius: 6px;
   border-radius: 6px;
 }
-/* line 348, ../sass/celiastyle.sass */
+/* line 359, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup form, #specialOfferPopup #mc_embed_signup form {
   text-align: center;
 }
-/* line 350, ../sass/celiastyle.sass */
+/* line 361, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup img, #specialOfferPopup #mc_embed_signup img {
   display: inline-block;
   width: 30%;
 }
-/* line 353, ../sass/celiastyle.sass */
+/* line 364, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup h2, #specialOfferPopup #mc_embed_signup h2 {
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4em;
   margin: 1em 0;
 }
-/* line 358, ../sass/celiastyle.sass */
+/* line 369, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .mc-field-group, #specialOfferPopup #mc_embed_signup .mc-field-group {
   padding-bottom: 0;
 }
-/* line 361, ../sass/celiastyle.sass */
+/* line 372, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup .button, #specialOfferPopup #mc_embed_signup .button {
   width: 210px;
 }
-/* line 364, ../sass/celiastyle.sass */
+/* line 375, ../sass/celiastyle.sass */
 #newsletter #mc_embed_signup #noThanks, #specialOfferPopup #mc_embed_signup #noThanks {
   position: relative;
   left: 2px;
