@@ -16,9 +16,10 @@
       e.stopPropagation();
       $('a.info').text('More Info');
       $('a.buyOnline').text('Buy Online');
+      $('a.trade').text('Trade');
       
       $('#stockists').toggleClass('extend');
-      $('#info, #buyOnline').removeClass('extend');
+      $('#info, #buyOnline, #trade').removeClass('extend');
       
       if($('a.stockists').text() !== 'Home') {
         $('a.stockists').text('Home');
@@ -32,9 +33,10 @@
       e.stopPropagation();
       $('a.stockists').text('Stockists');
       $('a.buyOnline').text('Buy Online');
+      $('a.trade').text('Trade');
       
       $('#info').toggleClass('extend');
-      $('#stockists, #buyOnline').removeClass('extend');
+      $('#stockists, #buyOnline, #trade').removeClass('extend');
       
       if($('a.info').text() !== 'Home') {
         $('a.info').text('Home');
@@ -48,14 +50,32 @@
       e.stopPropagation();
       $('a.stockists').text('Stockists');
       $('a.info').text('More Info');
+      $('a.trade').text('Trade');
       
       $('#buyOnline').toggleClass('extend');
-      $('#stockists, #info').removeClass('extend');
+      $('#stockists, #info, #trade').removeClass('extend');
       
       if($('a.buyOnline').text() !== 'Home') {
         $('a.buyOnline').text('Home');
       } else {
         $('a.buyOnline').text('Buy Online');
+      }
+    });
+
+    $('a.trade').bind('click touch', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      $('a.stockists').text('Stockists');
+      $('a.info').text('More Info');
+      $('a.buyOnline').text('Buy Online');
+      
+      $('#trade').toggleClass('extend');
+      $('#stockists, #info, #buyOnline').removeClass('extend');
+      
+      if($('a.trade').text() !== 'Home') {
+        $('a.trade').text('Home');
+      } else {
+        $('a.trade').text('Trade');
       }
     });
 
