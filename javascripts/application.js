@@ -160,11 +160,6 @@ jQuery(function($) {
     }
   });
 
-  $('.comingSoon').on('click touch', function(e) {
-    e.preventDefault();
-    $(e.target).text('Coming Soon');
-  });
-
 
   // MORE INFO NAV LINKS
   $('#info ul li').on('click touch', function(e) {
