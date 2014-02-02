@@ -17,7 +17,7 @@ function initialize() {
 }
 
 function codeAddress() {
-  var address = document.getElementById('address').value;
+  var address = document.getElementById('address').value + ', UK';
   
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {

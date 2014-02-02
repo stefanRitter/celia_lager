@@ -225,13 +225,31 @@ section
     z-index: 21
   #panel
     position: absolute
-    top: 5px
+    top: 0
     left: 50%
-    margin-left: -180px
+    width: 280px
+    padding: 10px
+    margin-left: -150px
     z-index: 5
-    background-color: #fff
-    padding: 5px
-    border: 1px solid #999
+    background-color: $background-color
+    +border-bottom-left-radius(6px)
+    +border-bottom-right-radius(6px)
+    vertical-align: bottom
+    input
+      +border-radius(5px)
+      height: 30px
+    input[type='button']
+      +appearance(none)
+      border: 0
+      background-color: $celia-green
+      color: white
+      font-weight: bold
+      width: 70px
+      height: 34px
+      position: relative
+      top: -1px
+    input[type='text']
+      width: 200px
   #map-canvas
     width: 100%
     height: 84%
