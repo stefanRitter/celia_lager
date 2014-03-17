@@ -3,17 +3,6 @@ var map;
 
 function initialize() {
   geocoder = new google.maps.Geocoder();
-  var latlng = new google.maps.LatLng(52.638917, -0.864622);
-  var mapOptions = {
-    zoom: 7,
-    center: latlng
-  };
-  map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  var ctaLayer = new google.maps.KmlLayer({
-    url: 'https://maps.google.com/maps/ms?ie=UTF8&hl=en&oe=UTF8&msa=0&msid=202716945335560966128.0004cce3230ba2281e3b3&ll=52.638917,-0.864622&spn=3.640448,4.318534&t=m&output=kml'
-  });
-  ctaLayer.setMap(map);
 }
 
 function codeAddress() {
@@ -21,13 +10,18 @@ function codeAddress() {
   
   geocoder.geocode( { 'address': address}, function(results, status) {
     if (status == google.maps.GeocoderStatus.OK) {
-      map.setCenter(results[0].geometry.location);
-      map.setZoom(15);
-      
-      var marker = new google.maps.Marker({
-          map: map,
-          position: results[0].geometry.location
-      });
+      var url = 'https://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;oe=UTF8&amp;msa=0&amp;' +
+                'msid=202716945335560966128.0004cce3230ba2281e3b3&amp;ll=' +
+                results[0].geometry.location.lat() + ',' +
+                results[0].geometry.location.lng() +
+                '&amp;z=14&amp;t=m&amp;output=embed';
+
+      var iframe = $('<iframe width="100%" height="100%" frameborder="0" scrolling="no" ' +
+        'marginheight="0" marginwidth="0" src=' +
+        url + ' ></iframe>');
+
+      var container = $('#mapIframe');
+      container.empty().append(iframe);
     } else {
       alert('Geocode was not successful for the following reason: ' + status);
     }
