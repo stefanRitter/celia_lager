@@ -201,6 +201,12 @@ jQuery(function($) {
     $('#newsletter').addClass('extend');
   });
 
+  $('#newslettericon').on('click touch', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    $('#newsletter').addClass('extend');
+  });
+
   // SLIDE DOWN navigation when done loading
   setTimeout(function() {
     $('nav.hidden').addClass('moveUp');
