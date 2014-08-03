@@ -1,4 +1,4 @@
 .sass-cache/
 .DS_STORE
-
+*.swp
 wp-config.php
